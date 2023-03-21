@@ -1,0 +1,120 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --orange-color: #FE9013;
+  --yelow-color: #FFEE2E;
+  --text-color: #333B41;
+
+  --fonts-family: 'Roboto', Arial, Helvetica, sans-serif;
+  --fonts-family-else: 'Recoleta', serif;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: calc(20rem / 16);
+}
+
+.container {
+  display: flex;
+  max-width: 1280px;
+  /* height: 100vh; */
+  margin: 0 auto;
+  flex-direction: column;
+
+  border: 1px solid red;
+}
+
+.page {
+  display: flex;
+  margin: 0 auto;
+  width: calc(1200 / 1280 * 100%);
+  border: 1px solid rgb(76, 0, 255);
+}
+
+header {
+  display: flex;
+  max-width: 100%;
+  padding: 30px 0 0;
+  justify-content: center;
+  background-color: rgb(183, 114, 11);
+}
+
+header .page {
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+  position: relative;
+  /* position: fixed; */
+}
+
+.logo {
+  height: 100%;
+}
+
+/* logo_title */
+.logo-title {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 110%;
+  /* or 35px */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  /* color-primary */
+  color: #F1CDB3;
+}
+
+.logo-subtitle {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+
+.header-menu {
+  width: 30%;
+  height: 20px;
+  background: green;
+
+}
+
+main {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: rgba(13, 161, 112, 0.071);
+}
+
+footer {
+  display: flex;
+  flex: 1 1 100%;
+  max-width: 100%;
+  /* width: 100%; */
+  /* ------row------ */
+  justify-content: center;
+  background-color: rgb(183, 114, 11);
+}
+
+.bigl {
+  height: 908px;
+  margin-top: -90px;
+  padding: 90px;
+  background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+}

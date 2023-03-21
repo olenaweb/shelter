@@ -1,0 +1,41 @@
+@media screen and (max-width: 1600px) {
+  html {
+    font-size: 16px;
+  }
+
+  .container {
+    max-width: 1280px;
+  }
+
+  .page {
+    width: calc(1200 / 1280 * 100%);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container {
+    max-width: 768px;
+  }
+
+  .page {
+    width: calc(708 / 768 * 100%);
+  }
+}
+
+@media screen and (max-width: 330px) {
+  html {
+    font-size: 12px;
+  }
+
+  .container {
+    max-width: 320px;
+  }
+
+  .page {
+    width: calc(280 / 320 * 100%);
+  }
+}
