@@ -136,7 +136,6 @@ main {
   max-width: 100%;
   width: 100%;
   margin: 0 auto;
-  background-color: rgba(13, 161, 112, 0.071);
 }
 
 footer {
@@ -146,7 +145,6 @@ footer {
   /* width: 100%; */
   /* ------row------ */
   justify-content: center;
-  background-color: rgb(183, 114, 11);
 }
 
 .bigl {
@@ -156,7 +154,6 @@ footer {
   margin: -90px auto 0;
   padding: 90px 0 0 0;
   background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
-  border: 1px solid yellow;
 }
 
 .bigl .page {
@@ -172,7 +169,7 @@ footer {
   gap: 42px;
 }
 
-.bigl-text p:first-child {
+.bigl-text h3:first-child {
   /* margin: 0 0 42px; */
   padding: 0 150px 0 0;
   font-family: 'Georgia';
@@ -220,4 +217,57 @@ footer {
   width: 100%;
   height: auto;
   margin: 90px 0 0 0;
+}
+
+/* -------about---------- */
+.about {
+  border: 1px solid rgb(219, 18, 18);
+}
+
+section.about.page {
+  padding: 80px 175px 100px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: flex-start;
+  /* gap: 35px; */
+}
+
+.about-picture {
+  /* text-align: center; */
+  /* max-width: 300px;
+  max-height: 408px;
+  margin: 0 auto; */
+}
+
+.about-picture img {
+  max-width: 300px;
+  max-height: 408px;
+  width: 100%;
+  height: auto;
+}
+
+.about-text {
+  display: grid;
+  gap: 5px;
+}
+
+.about-text h3 {
+  padding: 14px 60px 0 0;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+.about-text p:nth-child(2),
+.about-text p:nth-child(3) {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #4C4C4C;
 }
