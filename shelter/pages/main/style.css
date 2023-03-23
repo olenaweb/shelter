@@ -29,6 +29,8 @@ body {
 .container {
   display: flex;
   /* max-width: 1280px; */
+  /* box-sizing: content-box; */
+  /* padding: 0 3.125%; */
   max-width: 100%;
   margin: 0 auto;
   flex-direction: column;
@@ -396,7 +398,8 @@ section.help .page {
   align-items: center;
   flex-direction: column;
   height: 100%;
-  gap: 60px;
+  gap: 3.5rem;
+  /* 56px; */
 }
 
 section.help .page h3 {
@@ -406,12 +409,35 @@ section.help .page h3 {
 .gifts {
   display: flex;
   flex: 1 1 100%;
-  width: 85.5%;
+  justify-content: center;
+  max-width: 1028px;
+  width: 100%;
   flex-wrap: wrap;
-  gap: 120px;
-  border: 1px solid fuchsia;
+  column-gap: 7.25rem;
+  /* 116px */
+  row-gap: 3.125rem;
+  /* 50px; */
+  /* border: 1px solid fuchsia; */
 }
 
 .some {
-  border: 1px solid darkkhaki;
+  /* border: 1px solid darkkhaki; */
+  text-align: center;
+}
+
+.some img {
+  flex-grow: 1;
+  height: auto;
+}
+
+.some h4 {
+  padding: 24px 0 0 0;
+  text-align: center;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #545454;
 }
