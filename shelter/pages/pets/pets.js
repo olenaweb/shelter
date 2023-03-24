@@ -4,31 +4,31 @@ let shelter = [
     name: "Katrine"
   },
   {
-    image: "../../assets/images/Jennifer.png",
+    image: "../../assets/images/jennifer.png",
     name: "Jennifer"
   },
   {
-    image: "../../assets/images/Woody.png",
+    image: "../../assets/images/woody.png",
     name: "Woody"
   },
   {
-    image: "../../assets/images/Sophia.png",
+    image: "../../assets/images/sophia.png",
     name: "Sophia"
   },
   {
-    image: "../../assets/images/Timmy.png",
+    image: "../../assets/images/timmy.png",
     name: "Timmy"
   },
   {
-    image: "../../assets/images/Charly.png",
+    image: "../../assets/images/charly.png",
     name: "Charly"
   },
   {
-    image: "../../assets/images/Scarlett.png",
+    image: "../../assets/images/scarlett.png",
     name: "Scarlett"
   },
   {
-    image: "../../assets/images/Freddie.png",
+    image: "../../assets/images/freddie.png",
     name: "Freddie"
   },
 ];
