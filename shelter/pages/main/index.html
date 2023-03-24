@@ -18,13 +18,14 @@
     <header>
       <div class="page">
         <div class="logo">
-          <h1 class="logo-title">Cozy House</h1>
+          <span class="logo-title"><a href="#">Cozy House</a></span>
           <p class="logo-subtitle">Shelter for pets in Boston</p>
         </div>
         <nav class="nav">
           <ul class="menu-list">
             <li class="menu-item">
-              <a href="#" class="menu-link active" onclick="window.location.reload();">About the shelter</a>
+              <a href="#" class="menu-link active">About the shelter</a>
+              <!-- onclick="window.location.reload(); -->
             </li>
             <li class="menu-item"><a href="../pets/pets.html" target="_blank" class="menu-link">Our pets</a></li>
             <li class="menu-item"><a href="#help" class="menu-link">Help the shelter</a></li>
@@ -42,8 +43,6 @@
               will love you more than anybody else in the world, you will see!
             </p>
             <button class="bigl-btn" onclick="window.location.href='#pets'">Make a friend</button>
-            donate for volunteers
-            </button>
           </div>
           <div class="bigl-picture">
             <img src="../../assets/images/start-screen-puppy.png" alt="puppy">
@@ -143,16 +142,65 @@
           </div>
         </div>
       </section>
+      <section class="donation" id="donation">
+        <div class="page">
+          <div class="donation-picture">
+            <img src="../../assets/images/donation-dog.png" alt="donation dog">
+          </div>
+          <div class="donation-text">
+            <h3>You can also <br>make a donation</h3>
+            <p>Name of the bank / Type of bank account</p>
+            <a href="#">
+              <div class="credit-card">
+                <img src="../../assets/images/credit-card.svg" alt="credit-card">
+                <img src="../../assets/images/creditnumber.svg" alt="creditnumber">
+              </div>
+            </a>
+            <p>Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero
+              sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames
+              ac ante ipsum primis in faucibus.</p>
+
+          </div>
+        </div>
+      </section>
     </main>
 
-
-
-    <footer>
+    <footer id="contact">
       <div class="page">
+        <div class="question">
+          <h3>For questions <br>and suggestions</h3>
+          <div class="mail">
+            <img src="../../assets/images/icon-email.svg" alt="email">
+            <span>&nbsp;&nbsp;<a href="mailto:email@shelter.com" class="mail-address">email@shelter.com</a></span>
+          </div>
+          <div class="phone">
+            <img src="../../assets/images/icon-phone.svg" alt="phone">
+            <span>&nbsp;&nbsp;<a href="tel:+136745677554" class="fone-number">+13 674 567 75 54</a></span>
+          </div>
+        </div>
+        <div class="waiting">
+          <h3>We are waiting for your visit</h3>
+          <div class="pin1">
+            <div>
+              <img src="../../assets/images/pin.svg" alt="pin">
+            </div>
+            <span><a
+                href="https://www.google.com/maps/place/Бостон,+Массачусетс,+США/@42.3145186,-71.1103716,11z/data=!3m1!4b1!4m6!3m5!1s0x89e3652d0d3d311b:0x787cbf240162e8a0!8m2!3d42.3600825!4d-71.0588801!16zL20vMDFjeF8"
+                class="address1" target="_blank">1 Central Street, Boston (entrance from the store)</a>
+            </span>
+          </div>
+          <div class="pin2">
+            <img src="../../assets/images/pin.svg" alt="pin">
+            <span>&nbsp;&nbsp;<a
+                href="https://www.google.com/maps/place/Лондон,+Великобритания/@51.5287352,-0.38179,10z/data=!3m1!4b1!4m6!3m5!1s0x47d8a00baf21de75:0x52963a5addd52a99!8m2!3d51.5072178!4d-0.1275862!16zL20vMDRqcGw"
+                class="address2" target="_blank">18 South Park, London </a>
+            </span>
+          </div>
+        </div>
+        <div class="dog-picture">
+          <img src="../../assets/images/footer-puppy.png" alt="footer-puppy">
+        </div>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eaque voluptatum amet atque quo. Pariatur
-          Reiciendis, nostrum animi.
-        </p>
       </div>
     </footer>
   </div>
