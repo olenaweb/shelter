@@ -64,7 +64,7 @@ h3 {
   width: 100%;
   margin: 0 auto;
   /* width: calc(1200 / 1280 * 100%); */
-  border: 1px solid rgba(193, 232, 21, 0.468);
+  /* border: 1px solid rgba(193, 232, 21, 0.468); */
 }
 
 header {
@@ -282,7 +282,7 @@ section.pets .page {
   align-items: center;
   flex-direction: column;
   height: 100%;
-  gap: 60px;
+  gap: 61px;
 }
 
 section.pets .page h3 {

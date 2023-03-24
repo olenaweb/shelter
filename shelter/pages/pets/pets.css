@@ -1,0 +1,102 @@
+/* logo_title */
+.logo-title {
+  color: #545454;
+}
+
+.logo-title a {
+  color: #545454;
+}
+
+.logo-subtitle {
+  color: #292929;
+}
+
+.nav li a:hover {
+  cursor: pointer;
+  color: #000000;
+}
+
+.menu-link {
+  color: #545454;
+}
+
+.menu-link:hover {
+  color: #000000;
+}
+
+.menu-link:active {
+  color: #292929;
+  border: 3px solid;
+  border-width: 0px 0px 3px;
+  border-color: transparent transparent #F1CDB3 transparent;
+}
+
+.menu-link.active {
+  border: 3px solid;
+  border-width: 0px 0px 3px;
+  color: #000000;
+  border-color: transparent transparent #F1CDB3 transparent;
+}
+
+header {
+  padding: 30px 0 33px;
+}
+
+/* --------carousel----------- */
+.pets {
+  padding: 0;
+}
+
+.carousel {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+.item {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 22.5% 22.5% 22.5% 22.5%;
+  column-gap: 40px;
+  row-gap: 34px;
+  width: 100%;
+
+}
+
+/* -----navigation---- */
+.navigation {
+  display: flex;
+  column-gap: 21px;
+}
+
+.nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.center {
+  background: #F1CDB3;
+  color: #292929;
+  border: none;
+}
+
+.none-active {
+  border: 2px solid #CDCDCD;
+  color: #CDCDCD;
+}
+
+.active-btn {
+  border: 2px solid #F1CDB3;
+  color: #292929;
+}
+
+.center:hover,
+.active-btn:hover {
+  background: #FDDCC4;
+  border: none;
+}
