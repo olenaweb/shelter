@@ -1,3 +1,14 @@
+h1 {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  text-align: center;
+}
+
 /* logo_title */
 .logo-title {
   color: #545454;
@@ -26,6 +37,7 @@
 
 .menu-link:active {
   color: #292929;
+  color: #000000;
   border: 3px solid;
   border-width: 0px 0px 3px;
   border-color: transparent transparent #F1CDB3 transparent;
@@ -88,6 +100,13 @@ header {
 .none-active {
   border: 2px solid #CDCDCD;
   color: #CDCDCD;
+}
+
+.none-active:hover,
+.none-active:active {
+  border: 2px solid #CDCDCD;
+  color: #CDCDCD;
+  background: rgb(240, 240, 240);
 }
 
 .active-btn {

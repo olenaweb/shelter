@@ -12,9 +12,8 @@ html {
 }
 
 :root {
-
-  --fonts-family: 'Roboto', Arial, Helvetica, sans-serif;
-  --fonts-family-else: 'Recoleta', serif;
+  --fonts-family: 'ArialMT', Arial, Helvetica, sans-serif;
+  --fonts-family-else: 'Georgia', serif;
 }
 
 .logo-title a:hover,
@@ -29,6 +28,12 @@ a:active {
   color: #FDDCC4;
   color: #f76d0a;
   cursor: pointer;
+}
+
+a,
+button,
+.credit-card {
+  transition: all 500ms ease-in-out;
 }
 
 body {
@@ -185,7 +190,7 @@ main {
   gap: 42px;
 }
 
-.bigl-text h2:first-child {
+.bigl-text h1:first-child {
   /* margin: 0 0 42px; */
   padding: 0 150px 0 0;
   font-family: 'Georgia';
@@ -333,6 +338,7 @@ section.pets .page h3 {
   gap: 30px;
   border-radius: 9px;
   background: #FAFAFA;
+  cursor: pointer;
 }
 
 .card img {
@@ -497,6 +503,7 @@ section.donation .page {
   height: 43px;
   background: #F1CDB3;
   border-radius: 9px;
+  border: none;
 }
 
 .credit-card:hover {
