@@ -107,7 +107,7 @@ header .page {
   text-decoration: none;
   color: #F1CDB3;
   /* -webkit-text-stroke: 0.5px #000000; */
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 
 .logo-subtitle {
@@ -155,7 +155,7 @@ header .page {
 .menu-link.active {
   border: 3px solid;
   border-width: 0px 0px 3px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
   color: #FAFAFA;
   border-color: transparent transparent #F1CDB3 transparent;
 }
