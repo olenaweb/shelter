@@ -18,14 +18,14 @@ html {
 
 .logo-title a:hover,
 .logo-title a:active {
-  color: #FDDCC4;
+  /* color: #FDDCC4; */
   color: #f76d0a;
 
 }
 
 a:hover,
 a:active {
-  color: #FDDCC4;
+  /* color: #FDDCC4; */
   color: #f76d0a;
   cursor: pointer;
 }
@@ -38,7 +38,7 @@ button,
 
 body {
   margin: 0 auto;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'ArialMT', Arial, Helvetica, sans-serif;
   font-size: calc(20rem / 16);
 }
 
@@ -106,6 +106,8 @@ header .page {
 .logo-title a {
   text-decoration: none;
   color: #F1CDB3;
+  /* -webkit-text-stroke: 0.5px #000000; */
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .logo-subtitle {
@@ -157,15 +159,12 @@ header .page {
   border-color: transparent transparent #F1CDB3 transparent;
 }
 
-
 /* ------------main--------------- */
 main {
   max-width: 100%;
   width: 100%;
   margin: 0 auto;
 }
-
-
 
 /* ----------bigl--------------- */
 .bigl {
@@ -174,7 +173,7 @@ main {
   width: 100%;
   margin: -90px auto 0;
   padding: 90px 0 0 0;
-  background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  background: url('../../assets/images/noise_transparent@2x.png'), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 }
 
 .bigl .page {
@@ -191,7 +190,6 @@ main {
 }
 
 .bigl-text h1:first-child {
-  /* margin: 0 0 42px; */
   padding: 0 150px 0 0;
   font-family: 'Georgia';
   font-style: normal;
@@ -234,19 +232,19 @@ button:hover {
 }
 
 .bigl-picture img {
+  margin: 90px 0 0 0;
   max-width: 698px;
   max-height: 728px;
   width: 100%;
   height: auto;
-  margin: 90px 0 0 0;
 }
 
 /* -------about---------- */
 
 section.about.page {
-  padding: 80px 175px 94px;
+  padding: 80px 175px 97px;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 49.5% 50.5%;
   justify-content: flex-start;
 }
 
@@ -283,7 +281,7 @@ section.pets {
 }
 
 section.pets .page {
-  padding: 77px 0 100px;
+  padding: 75px 0 100px;
   align-items: center;
   flex-direction: column;
   height: 100%;
@@ -339,6 +337,17 @@ section.pets .page h3 {
   border-radius: 9px;
   background: #FAFAFA;
   cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: #FFFFFF;
+}
+
+.card:hover button {
+  background: #FDDCC4;
+  border: none;
+  transition: all 500ms ease-in-out;
 }
 
 .card img {
@@ -408,7 +417,8 @@ section.help {
 }
 
 section.help .page {
-  padding: 80px 0 100px;
+  /* padding: 80px 0 100px; */
+  padding: 85px 0 100px;
   align-items: center;
   flex-direction: column;
   height: 100%;
@@ -549,7 +559,7 @@ footer {
   /* width: 100%; */
   /* ------row------ */
   justify-content: center;
-  background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  background: url('../../assets/images/noise_transparent@2x.png'), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 
   font-family: 'Georgia';
   font-style: normal;
