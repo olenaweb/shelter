@@ -282,10 +282,6 @@ section.pets {
   background: #F6F6F6;
 }
 
-section.pets button {
-  background: #FAFAFA;
-}
-
 section.pets .page {
   padding: 77px 0 100px;
   align-items: center;
@@ -316,6 +312,7 @@ section.pets .page h3 {
   transform: translateY(-50%);
   border: 2px solid #F1CDB3;
   border-radius: 100px;
+  background: #F6F6F6;
 }
 
 .button-right {
@@ -325,7 +322,7 @@ section.pets .page h3 {
 .button-left:hover,
 .button-right:hover {
   background: #FDDCC4;
-  border: none;
+  border: 2px solid #FDDCC4;
   cursor: pointer;
 }
 
@@ -337,7 +334,6 @@ section.pets .page h3 {
 }
 
 .card {
-  /* border: 1px solid red; */
   display: grid;
   gap: 30px;
   border-radius: 9px;
@@ -527,7 +523,8 @@ section.donation .page {
   cursor: pointer;
 }
 
-.credit-card img:first-child {
+/* .credit-card img:first-child { */
+.credit-card img {
   padding-left: 8px;
 }
 

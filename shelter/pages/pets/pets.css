@@ -86,13 +86,15 @@ header {
   height: 52px;
   border-radius: 100px;
   cursor: pointer;
+  background: #F6F6F6;
 }
 
 .center {
   background: #F1CDB3;
+  border: 2px solid #F1CDB3;
   color: #292929;
-  border: none;
 }
+
 
 .none-active {
   border: 2px solid #CDCDCD;
@@ -115,5 +117,5 @@ header {
 .center:hover,
 .active-btn:hover {
   background: #FDDCC4;
-  border: none;
+  border: 2px solid #FDDCC4;
 }
