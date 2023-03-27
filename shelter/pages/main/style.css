@@ -120,6 +120,12 @@ header .page {
   color: #FFFFFF;
 }
 
+/* h1 span {
+  margin: 16px;
+  padding: 1px;
+  border-bottom: 2px solid #D71920;
+} */
+
 .nav {
   width: 36.9%;
 }
@@ -144,7 +150,7 @@ header .page {
   text-decoration: none;
   padding: 0 0 3px;
   color: #CDCDCD;
-
+  border: none;
   font-family: 'Arial';
   font-style: normal;
   font-weight: 400;
@@ -160,6 +166,14 @@ header .page {
   border-color: transparent transparent #F1CDB3 transparent;
   pointer-events: none;
 }
+
+.menu-link:active {
+  border: none;
+  border: 3px solid;
+  border-width: 0px 0px 3px;
+  border-color: transparent transparent #F1CDB3 transparent;
+}
+
 
 /* ------------main--------------- */
 main {
