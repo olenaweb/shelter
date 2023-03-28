@@ -128,6 +128,8 @@ header .page {
 
 .nav {
   width: 36.9%;
+  width: calc(443 / 1200 * 100%);
+
 }
 
 .menu-list {
@@ -185,7 +187,7 @@ main {
 /* ----------bigl--------------- */
 .bigl {
   max-height: 908px;
-  height: 908px;
+  /* height: 908px; */
   width: 100%;
   margin: -90px auto 0;
   padding: 90px 0 0 0;
@@ -490,7 +492,6 @@ section.donation .page {
   display: grid;
   grid-template-columns: 55.19% 41.53%;
   column-gap: 30px;
-  justify-content: center;
   max-width: 915px;
   width: 100%;
 }
@@ -606,9 +607,7 @@ footer {
 footer .page {
   display: grid;
   column-gap: 160px;
-  grid-template-columns: 23.16% 25.16% 25%;
   grid-template-columns: 23.25% 25.16% 25%;
-
 }
 
 .question,
