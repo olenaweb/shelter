@@ -14,7 +14,13 @@
 
 }
 
-@media screen and (max-width: 1055px) {
+@media screen and (max-width: 1150px) {
+  footer .page {
+    column-gap: 8rem;
+  }
+}
+
+@media screen and (max-width: 1070px) {
   html {
     font-size: 14px;
   }
@@ -45,7 +51,8 @@
   .bigl .page {
     grid-template-columns: 100%;
     grid-template-rows: 27.63% 50.9%;
-    gap: 94px;
+    gap: 6.714rem;
+    /* 94px; */
     justify-items: right;
   }
 
@@ -76,7 +83,8 @@
     width: 56%;
     max-height: 1048px;
     display: grid;
-    row-gap: 66px;
+    row-gap: 4.714rem;
+    /* 66px; */
     grid-template-columns: 100%;
     grid-template-rows: 48.22% 51.77%;
     justify-items: center;
@@ -130,8 +138,10 @@
     flex-wrap: wrap;
 
     max-width: 708px;
-    column-gap: 60px;
-    row-gap: 56px;
+    column-gap: 4.2857rem;
+    /* 60px; */
+    row-gap: 4rem;
+    /* 56px; */
   }
 
   .some {
@@ -147,7 +157,8 @@
     grid-template-columns: 100%;
     grid-template-rows: 36.01% 33.33%;
     justify-items: center;
-    row-gap: 124px;
+    row-gap: 8.8571rem;
+    /* 124px; */
     max-width: 708px;
     max-height: 783px;
   }
@@ -181,8 +192,10 @@
 
   footer .page {
     display: grid;
-    column-gap: 59px;
-    row-gap: 72px;
+    column-gap: 4.2142rem;
+    /* 59px; */
+    row-gap: 5.1428rem;
+    /* 72px; */
     grid-template-columns: 40% 43%;
     grid-template-rows: 40% 51%;
     justify-content: center;
