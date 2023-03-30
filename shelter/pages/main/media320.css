@@ -1,46 +1,39 @@
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 640px) {
   html {
-    font-size: 16px;
-  }
-
-  .container {
-    max-width: 1280px;
+    font-size: 12px;
   }
 
   .page {
-    width: calc(1200 / 1280 * 100%);
+    width: calc(600 / 640 * 100%);
   }
 
-
-}
-
-@media screen and (max-width: 1150px) {
-  footer .page {
-    column-gap: 8rem;
+  .nav {
+    display: none;
   }
 }
 
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 350px) {
   html {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   .container {
-    max-width: 768px;
+    /* max-width: 320px; */
     max-width: 100%;
   }
 
   .page {
-    width: calc(708 / 768 * 100%);
+    width: calc(300 / 320 * 100%);
   }
 
+  /* ---------------------------------------------- */
   .nav {
-    width: calc(443 / 708 * 100%);
+    display: none;
   }
 
   /* ---------bigl----------- */
   .bigl {
-    max-height: 1165px;
+    max-height: 823px;
     /* height: 908px; */
     width: 100%;
     margin: -90px auto 0;
@@ -50,10 +43,10 @@
 
   .bigl .page {
     grid-template-columns: 100%;
-    grid-template-rows: 27.63% 50.9%;
-    gap: 6.714rem;
-    /* 94px; */
-    justify-items: right;
+    grid-template-rows: 34.14% 32.92%;
+    gap: 8.75rem;
+    /* 105px; */
+    justify-content: center;
   }
 
   .bigl-text {
