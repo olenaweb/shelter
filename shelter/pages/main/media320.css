@@ -22,6 +22,16 @@
     max-width: 100%;
   }
 
+  header {
+    padding: 28px 11px 0;
+  }
+
+  .logo-subtitle {
+    /* font-size: 13px; */
+    line-height: 30px;
+    padding: 0 0 0 4px;
+  }
+
   .page {
     width: calc(300 / 320 * 100%);
   }
@@ -38,37 +48,51 @@
     width: 100%;
     margin: -90px auto 0;
     padding: 90px 0 0 0;
+    border: 1px solid red;
   }
-
 
   .bigl .page {
     grid-template-columns: 100%;
-    grid-template-rows: 34.14% 32.92%;
-    gap: 8.75rem;
-    /* 105px; */
+    grid-template-rows: 44% 21%;
+    gap: 10.5rem;
+    gap: 105px;
     justify-content: center;
   }
 
   .bigl-text {
-    padding: 106px 0 0 0;
+    padding: 0;
+    display: grid;
     justify-items: center;
+    gap: 42px;
   }
 
   .bigl-text h1:first-child {
-    padding: 0 154px 0 0;
+    padding: 59px 0 0;
+    font-size: 25px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.06em;
   }
 
   .bigl-text p:nth-child(2) {
-    width: 65%;
+    font-size: 15px;
+    line-height: 160%;
+    width: 98%;
+    text-align: center;
   }
 
   .bigl-picture img {
-    max-width: 569px;
-    max-height: 593px;
-
-    width: 100%;
-    height: auto;
+    max-width: 260px;
+    max-height: 271.71px;
   }
+
+  .bigl-btn {
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+  }
+
+
 
   /* ---------about---------- */
   section.about.page {
