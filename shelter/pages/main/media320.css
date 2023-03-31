@@ -1,4 +1,8 @@
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 719px) {
+  html {
+    font-size: 16px;
+  }
+
   html {
     font-size: 12px;
   }
@@ -10,16 +14,60 @@
   .nav {
     display: none;
   }
+
+  .bigl-text h1:first-child {
+    padding: 0;
+  }
+
+  .carousel {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    max-width: 612px;
+  }
+
+  .item {
+    margin: 0 auto;
+    display: flex;
+    /* width: 82.5%; */
+    justify-content: center;
+  }
+
+  .item .card:nth-child(2),
+  .item .card:nth-child(3) {
+    display: none;
+  }
+
+  .button-left,
+  .button-right {
+    position: absolute;
+    /* top: 112%; */
+  }
+
+  .button-left {
+    left: 19%;
+  }
+
+  .button-right {
+    right: 19%;
+  }
 }
 
+/*   ---320----   */
 @media screen and (max-width: 370px) {
   html {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .container {
     /* max-width: 320px; */
     max-width: 100%;
+  }
+
+  h3 {
+    font-size: 25px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
   }
 
   header {
@@ -44,11 +92,10 @@
   /* ---------bigl----------- */
   .bigl {
     max-height: 823px;
-    /* height: 908px; */
     width: 100%;
     margin: -90px auto 0;
     padding: 90px 0 0 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   .bigl .page {
@@ -60,14 +107,13 @@
   }
 
   .bigl-text {
-    padding: 0;
+    padding: 59px 0 0;
     display: grid;
     justify-items: center;
     gap: 42px;
   }
 
   .bigl-text h1:first-child {
-    padding: 59px 0 0;
     font-size: 25px;
     line-height: 130%;
     text-align: center;
@@ -96,15 +142,14 @@
 
   /* ---------about---------- */
   section.about.page {
-    padding: 67px 0 138px;
-    width: 56%;
-    max-height: 1048px;
-    display: grid;
-    row-gap: 4.714rem;
-    /* 66px; */
-    grid-template-columns: 100%;
-    grid-template-rows: 48.22% 51.77%;
-    justify-items: center;
+    padding: 44px 0 0;
+    width: 86%;
+    max-height: 974px;
+    /* display: grid; */
+    row-gap: 42px;
+    /* grid-template-columns: 100%; */
+    grid-template-rows: 55% 40%;
+    /* justify-items: center; */
   }
 
   .about-picture {
@@ -112,60 +157,147 @@
   }
 
   .about-picture img {
-    max-width: 300px;
-    max-height: 408px;
-    width: 100%;
-    height: auto;
+    max-width: 260px;
+    max-height: 353.6px;
+    /* width: 100%; */
+    /* height: auto; */
   }
 
   .about-text {
     /* display: grid; */
-    gap: 10px;
-    order: 1;
+    gap: 23px;
+    /* order: 1; */
   }
 
   .about-text h3 {
-    padding: 14px 60px 0 0;
+    padding: 0;
+    font-size: 25px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
+
+
+  .about-text p:nth-child(2),
+  .about-text p:nth-child(3) {
+    font-size: 15px;
+    line-height: 160%;
+    /* letter-spacing: 0.7px; */
+    text-align: justify;
   }
 
   /* ----------pets----------- */
   section.pets .page {
-    padding: 78px 0 100px;
+    padding: 78px 0 42px;
+    gap: 47px;
   }
 
-  #item-active .card:nth-child(3) {
+  section.pets .page h3 {
+    /* text-align: center; */
+    font-size: 25px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+  }
+
+  .carousel {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .item .card:nth-child(2),
+  .item .card:nth-child(3) {
     display: none;
+  }
+
+  .item {
+    margin: 0 auto;
+    display: flex;
+    /* width: 82.5%; */
+    justify-content: center;
+  }
+
+  .card p {
+    font-size: 20px;
+    line-height: 23px;
+    /* letter-spacing: 0.06em; */
+  }
+
+  .card button {
+    font-size: 17px;
+    line-height: 130%;
+    /* letter-spacing: 0.06em; */
+  }
+
+  .pets .page>button {
+    margin: 72px 0 0 0;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+  }
+
+  .button-left,
+  .button-right {
+    position: absolute;
+    top: 112%;
+  }
+
+  .button-left {
+    left: 21%;
+  }
+
+  .button-right {
+    right: 21%;
   }
 
   /* ------help---------- */
   section.help .page {
-    padding: 84px 0 100px;
-    align-items: center;
-    flex-direction: column;
+    padding: 42px 0 42px;
+    /* align-items: center; */
+    /* flex-direction: column; */
     height: 100%;
-    /* ----- */
-    gap: 59px;
+    gap: 36px
   }
 
   .gifts {
-    display: flex;
-    flex: 1 1 100%;
-    justify-content: center;
+    /* display: flex; */
+    /* flex: 1 1 100%; */
+    justify-content: left;
     width: 100%;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 
-    max-width: 708px;
-    column-gap: 4.2857rem;
-    /* 60px; */
-    row-gap: 4rem;
-    /* 56px; */
+    max-width: 290px;
+    max-height: 555px;
+    column-gap: 30px;
+    row-gap: 25px;
+  }
+
+  .section.help .page h3 {
+    font-size: 25px;
+    line-height: 130%;
+    /* align-items: center; */
+    /* text-align: center; */
+    letter-spacing: 0.06em;
   }
 
   .some {
-    text-align: center;
-    width: 24%;
-    width: calc(170 / 708%);
+    /* text-align: center; */
+    /* width: 44.82%; */
+    width: calc(130 / 290 * 100%);
   }
+
+  .some h4 {
+    padding: 11px 0 0 0;
+
+    font-size: 15px;
+    line-height: 110%;
+  }
+
+  .some img {
+    scale: 0.83;
+  }
+
 
   /* ---------donation----------- */
   section.donation .page {
