@@ -56,20 +56,20 @@ header {
   padding: 0;
 }
 
-.carousel {
+.carousel2 {
   margin: 0 auto;
   position: relative;
   width: 100%;
+  /* max-width: 1200px; */
 }
 
-.item {
+.item2 {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 22.5% 22.5% 22.5% 22.5%;
   column-gap: 40px;
   row-gap: 34px;
   width: 100%;
-
 }
 
 /* -----navigation---- */

@@ -330,7 +330,7 @@ section.pets .page h3 {
   margin: 0 auto;
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  /* max-width: 1200px; */
 }
 
 .button-left,
@@ -561,10 +561,6 @@ section.donation .page {
   cursor: pointer;
 }
 
-/* .credit-card img:first-child { */
-.credit-card img {
-  padding-left: 8px;
-}
 
 /* .credit-card img:first-child+img {
   padding-top: 8px;
