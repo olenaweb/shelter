@@ -1,215 +1,297 @@
-@media screen and (max-width: 1280px) {
-  html {
-    font-size: 16px;
-  }
+ @media screen and (max-width: 1280px) {
+   html {
+     font-size: 16px;
+   }
 
-  .container {
-    max-width: 1280px;
-  }
+   .container {
+     max-width: 100%;
+   }
 
-  .page {
-    width: calc(1200 / 1280 * 100%);
-  }
-
-
-}
-
-@media screen and (max-width: 1150px) {
-  footer .page {
-    column-gap: 8rem;
-  }
-}
-
-@media screen and (max-width: 1070px) {
-  html {
-    font-size: 14px;
-  }
-
-  .container {
-    max-width: 768px;
-    max-width: 100%;
-  }
-
-  .page {
-    width: calc(708 / 768 * 100%);
-  }
-
-  .nav {
-    width: calc(443 / 708 * 100%);
-  }
-
-  /* ---------bigl----------- */
-  .bigl {
-    max-height: 1165px;
-    /* height: 908px; */
-    width: 100%;
-    margin: -90px auto 0;
-    padding: 90px 0 0 0;
-  }
+   .page {
+     width: calc(1200 / 1280 * 100%);
+   }
+ }
 
 
-  .bigl .page {
-    grid-template-columns: 100%;
-    grid-template-rows: 27.63% 50.9%;
-    gap: 6.714rem;
-    /* 94px; */
-    justify-items: right;
-  }
+ @media screen and (max-width: 1210px) {
+   .page {
+     width: calc(1800 / 1210 * 100%);
+   }
 
-  .bigl-text {
-    padding: 106px 0 0 0;
-    justify-items: center;
-  }
+   .button-left,
+   .button-right {
+     position: absolute;
+   }
 
-  .bigl-text h1:first-child {
-    padding: 0 154px 0 0;
-  }
+   .button-left {
+     left: 22%;
+   }
 
-  .bigl-text p:nth-child(2) {
-    width: 65%;
-  }
+   .button-right {
+     right: 22%;
+   }
 
-  .bigl-picture img {
-    max-width: 569px;
-    max-height: 593px;
+   .item {
+     margin: 0 auto;
+     display: flex;
+     justify-content: center;
+     gap: 10px;
+   }
 
-    width: 100%;
-    height: auto;
-  }
+   .item .card:nth-child(3) {
+     display: none;
+   }
+ }
 
-  /* ---------about---------- */
-  section.about.page {
-    padding: 67px 0 138px;
-    width: 56%;
-    max-height: 1048px;
-    display: grid;
-    row-gap: 4.714rem;
-    /* 66px; */
-    grid-template-columns: 100%;
-    grid-template-rows: 48.22% 51.77%;
-    justify-items: center;
-  }
 
-  .about-picture {
-    order: 2;
-  }
+ @media screen and (max-width: 1150px) {
+   .page {
+     width: calc(1090 / 1150 * 100%);
+   }
 
-  .about-picture img {
-    max-width: 300px;
-    max-height: 408px;
-    width: 100%;
-    height: auto;
-  }
+   footer .page {
+     column-gap: 8rem;
+   }
+ }
 
-  .about-text {
-    /* display: grid; */
-    gap: 10px;
-    order: 1;
-  }
 
-  .about-text h3 {
-    padding: 14px 60px 0 0;
-  }
+ @media screen and (max-width: 1080px) {
+   .page {
+     width: calc(1000 / 1080 * 100%);
+   }
 
-  /* ----------pets----------- */
-  section.pets .page {
-    padding: 78px 0 100px;
-  }
+   .button-left {
+     left: 0%;
+   }
 
-  #item-active .card:nth-child(3) {
-    display: none;
-  }
+   .button-right {
+     right: 0%;
+   }
+ }
 
-  /* ------help---------- */
-  section.help .page {
-    padding: 84px 0 100px;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-    /* ----- */
-    gap: 59px;
-  }
+ /*  -------- 768 ------------   */
 
-  .gifts {
-    display: flex;
-    flex: 1 1 100%;
-    justify-content: center;
-    width: 100%;
-    flex-wrap: wrap;
+ @media screen and (max-width: 1070px) {
+   html {
+     font-size: 16px;
+   }
 
-    max-width: 708px;
-    column-gap: 4.2857rem;
-    /* 60px; */
-    row-gap: 4rem;
-    /* 56px; */
-  }
+   .container {
+     max-width: 768px;
+     max-width: 100%;
+   }
 
-  .some {
-    text-align: center;
-    width: 24%;
-    width: calc(170 / 708%);
-  }
+   header {
+     padding: 28px 0 0;
+   }
 
-  /* ---------donation----------- */
-  section.donation .page {
-    padding: 83px 0 100px;
-    /* display: grid; */
-    grid-template-columns: 100%;
-    grid-template-rows: 36.01% 33.33%;
-    justify-items: center;
-    row-gap: 8.8571rem;
-    /* 124px; */
-    max-width: 708px;
-    max-height: 783px;
-  }
+   .logo-title {
+     /* font-size: 32px; */
+     line-height: 124%;
+   }
 
-  .donation-picture {
-    padding: 0;
-    order: 2;
-  }
+   .logo-subtitle {
+     /* font-size: 13px; */
+     line-height: 30px;
+   }
 
-  .donation-text {
-    /* display: grid; */
-    order: 1;
-    row-gap: 19px;
-    justify-items: left;
-    width: 54%;
-  }
+   .page {
+     width: calc(708 / 768 * 100%);
+   }
 
-  .credit-card {
-    /* display: flex; */
-    /* align-items: center; */
-    justify-content: space-between;
-    /* width: 350px; */
-    /* height: 43px; */
-    padding: 0 17px 0 5px;
-  }
+   .nav {
+     width: calc(443 / 708 * 100%);
+   }
 
-  /* ---------footer-------- */
-  footer {
-    max-height: 639px;
-  }
+   /* ---------bigl----------- */
+   .bigl {
+     max-height: 1165px;
+     /* height: 908px; */
+     width: 100%;
+     margin: -90px auto 0;
+     padding: 90px 0 0 0;
+   }
 
-  footer .page {
-    display: grid;
-    column-gap: 4.2142rem;
-    /* 59px; */
-    row-gap: 5.1428rem;
-    /* 72px; */
-    grid-template-columns: 40% 43%;
-    grid-template-rows: 40% 51%;
-    justify-content: center;
-  }
 
-  .dog-picture {
-    padding: 0;
-    grid-column: 1 / span 2;
-    display: flex;
-    justify-content: center;
-  }
+   .bigl .page {
+     grid-template-columns: 100%;
+     grid-template-rows: 27.9% 48.68%;
+     gap: 100px;
+     justify-items: right;
+   }
 
-  .question,
-  .waiting {
-    padding: 32px 0 0;
-  }
-}
+   .bigl-text {
+     padding: 106px 0 0 0;
+     justify-items: center;
+   }
+
+   .bigl-text h1:first-child {
+     padding: 0 150px 0 0;
+   }
+
+   .bigl-text p:nth-child(2) {
+     width: 65%;
+   }
+
+   .bigl-picture img {
+     max-width: 569px;
+     max-height: 593px;
+
+     width: 100%;
+     height: auto;
+   }
+
+   /* ---------about---------- */
+   section.about.page {
+     padding: 67px 0 138px;
+     width: 56%;
+     max-height: 1048px;
+     display: grid;
+     row-gap: 4.3rem;
+     grid-template-columns: 100%;
+     grid-template-rows: 48.22% 51.77%;
+     justify-items: center;
+   }
+
+   .about-picture {
+     order: 2;
+   }
+
+   .about-picture img {
+     max-width: 300px;
+     max-height: 408px;
+     width: 100%;
+     height: auto;
+   }
+
+   .about-text {
+     /* display: grid; */
+     gap: 10px;
+     order: 1;
+   }
+
+   .about-text h3 {
+     padding: 14px 60px 0 0;
+   }
+
+   /* ----------pets----------- */
+   section.pets .page {
+     padding: 80px 0 100px;
+   }
+
+   .carousel {
+     width: 100%;
+     max-width: 708px;
+   }
+
+   .button-left,
+   .button-right {
+     top: 51%;
+   }
+
+   .item .card:nth-child(3) {
+     display: none;
+   }
+
+   /* ---было изменено для --max-width: 1210px --- */
+   .item {
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     /* justify-content: center; */
+     /* gap: 10px; */
+     gap: 0;
+   }
+
+   /* ------help---------- */
+   section.help .page {
+     padding: 84px 0 100px;
+     align-items: center;
+     flex-direction: column;
+     height: 100%;
+     gap: 59px;
+   }
+
+   .gifts {
+     display: flex;
+     flex: 1 1 100%;
+     justify-content: center;
+     width: 100%;
+     flex-wrap: wrap;
+
+     max-width: 708px;
+     column-gap: 3.75rem;
+     /* 60px; */
+     row-gap: 3.5rem;
+     /* 56px; */
+   }
+
+   .some {
+     text-align: center;
+     width: 24%;
+     /* width: calc(170 / 708 * 100%); */
+   }
+
+   /* ---------donation----------- */
+   section.donation .page {
+     padding: 83px 0 100px;
+     /* display: grid; */
+     grid-template-columns: 100%;
+     grid-template-rows: 36.01% 33.33%;
+     justify-items: center;
+     row-gap: 7.75rem;
+     /* 124px; */
+     max-width: 708px;
+     max-height: 783px;
+   }
+
+   .donation-picture {
+     padding: 0;
+     order: 2;
+   }
+
+   .donation-text {
+     /* display: grid; */
+     order: 1;
+     row-gap: 19px;
+     justify-items: left;
+     width: 54%;
+   }
+
+   .credit-card {
+     /* display: flex; */
+     /* align-items: center; */
+     justify-content: space-between;
+     /* width: 350px; */
+     /* height: 43px; */
+     padding: 0 17px 0 5px;
+   }
+
+   /* ---------footer-------- */
+   footer {
+     max-height: 639px;
+   }
+
+   footer .page {
+     display: grid;
+     column-gap: 3.5rem;
+     /* 56px; */
+     row-gap: 4.5rem;
+     /* 72px; */
+     grid-template-columns: 40% 43%;
+     grid-template-rows: 40% 51%;
+     justify-content: center;
+   }
+
+   .dog-picture {
+     padding: 0;
+     grid-column: 1 / span 2;
+     display: flex;
+     justify-content: center;
+   }
+
+   .question,
+   .waiting {
+     padding: 32px 0 0;
+   }
+ }

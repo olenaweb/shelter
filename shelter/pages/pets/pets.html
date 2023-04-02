@@ -10,7 +10,11 @@
   <link rel="stylesheet" href="../main/fonts.css">
   <link rel="stylesheet" href="pets.css">
   <link rel="stylesheet" href="../main/media.css">
+  <link rel="stylesheet" href="../main/menu-burger.css">
+  <link rel="stylesheet" href="../main/media320.css">
   <link rel="stylesheet" href="pets_media.css">
+  <!-- <link rel="stylesheet" href="../main/media320.css"> -->
+
   <title>Pets</title>
 
 </head>
@@ -34,6 +38,11 @@
             <li class="menu-item"><a href="#contact" class="menu-link">Contacts</a></li>
           </ul>
         </nav>
+        <div class="header-bar" onclick="menuToggle()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
       </div>
     </header>
     <main>
@@ -41,8 +50,8 @@
         <div class="page">
           <h1>Our friends who <br>are looking for a house</h1>
           <!-- <div class="carousel-wrapper" id="carousel-wrapper"> -->
-          <div class="carousel" id="carousel">
-            <div class="item" id="item-active">
+          <div class="carousel2" id="carousel">
+            <div class="item2" id="item-active">
               <template id="template">
                 <div class="card">
                   <img class="pet-img" alt="pet">
@@ -73,7 +82,7 @@
     <footer id="contact">
       <div class="page">
         <div class="question">
-          <h3>For questions <br>and suggestions</h3>
+          <h3>For questions and suggestions</h3>
           <div class="mail">
             <img src="../../assets/icons/icon-email.svg" alt="email">
             <span>&nbsp;&nbsp;<a href="mailto:email@shelter.com" class="mail-address">email@shelter.com</a></span>

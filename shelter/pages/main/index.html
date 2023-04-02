@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="menu-burger.css">
   <link rel="stylesheet" href="media320.css">
   <title>Shelter</title>
 
@@ -33,6 +34,11 @@
             <li class="menu-item"><a href="#contact" class="menu-link">Contacts</a></li>
           </ul>
         </nav>
+        <div class="header-bar" onclick="menuToggle()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
       </div>
     </header>
     <main>
@@ -40,7 +46,8 @@
         <div class="page">
           <div class="bigl-text">
             <h1>Not only people<br> need a house</h1>
-            <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she
+            <p>We offer to give a chance to a little and&nbsp;nice puppy with an extremely wide and open heart. He or
+              she
               will love you more than anybody else in the world, you will see!
             </p>
             <button class="bigl-btn" onclick="window.location.href='#pets'">Make a friend</button>
@@ -68,33 +75,33 @@
       <section class="pets" id="pets">
         <div class="page">
           <h3>Our friends who <br>are looking for a house</h3>
-          <!-- <div class="carousel-wrapper" id="carousel-wrapper"> -->
-          <div class="carousel" id="carousel">
-            <button class="button-left">
-              <img src="../../assets/icons/Arrow-left.svg" alt="Arrow-left">
-            </button>
-            <div class="item" id="item-active">
-              <div class="card">
-                <img src="../../assets/images/katrine.png" alt="katrine">
-                <p>Katrine</p>
-                <button>Learn more</button>
+          <div class="carousel-wrapper" id="carousel-wrapper">
+            <div class="carousel" id="carousel">
+              <button class="button-left">
+                <img src="../../assets/icons/Arrow-left.svg" alt="Arrow-left">
+              </button>
+              <div class="item" id="item-active">
+                <div class="card">
+                  <img src="../../assets/images/katrine.png" alt="katrine">
+                  <p>Katrine</p>
+                  <button>Learn more</button>
+                </div>
+                <div class="card">
+                  <img src="../../assets/images/jennifer.png" alt="jennifer">
+                  <p>Jennifer</p>
+                  <button>Learn more</button>
+                </div>
+                <div class="card">
+                  <img src="../../assets/images/woody.png" alt="woody">
+                  <p>Woody</p>
+                  <button>Learn more</button>
+                </div>
               </div>
-              <div class="card">
-                <img src="../../assets/images/jennifer.png" alt="jennifer">
-                <p>Jennifer</p>
-                <button>Learn more</button>
-              </div>
-              <div class="card">
-                <img src="../../assets/images/woody.png" alt="woody">
-                <p>Woody</p>
-                <button>Learn more</button>
-              </div>
+              <button class="button-right">
+                <img src="../../assets/icons/Arrow-right.svg" alt="Arrow-left">
+              </button>
             </div>
-            <button class="button-right">
-              <img src="../../assets/icons/Arrow-right.svg" alt="Arrow-left">
-            </button>
           </div>
-          <!-- </div> -->
           <!-- <button>Get to know the rest</button> -->
           <button onclick="window.location.href='../pets/pets.html';">Get to know the rest</button>
         </div>

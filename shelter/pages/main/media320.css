@@ -1,25 +1,328 @@
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 719px) {
+  html {
+    font-size: 16px;
+  }
+
   html {
     font-size: 12px;
   }
 
   .page {
-    width: calc(600 / 640 * 100%);
+    width: calc(600 / 719 * 100%);
   }
 
   .nav {
     display: none;
   }
+
+  .bigl-text h1:first-child {
+    padding: 0;
+  }
+
+  .carousel {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    max-width: 612px;
+  }
+
+  .item {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .item .card:nth-child(2),
+  .item .card:nth-child(3) {
+    display: none;
+  }
+
+  .button-left,
+  .button-right {
+    position: absolute;
+  }
+
+  .button-left {
+    left: 19%;
+  }
+
+  .button-right {
+    right: 19%;
+  }
 }
 
-@media screen and (max-width: 370px) {
+/* --- 480 -- */
+@media screen and (max-width: 640px) {
   html {
-    font-size: 10px;
+    font-size: 14px;
+  }
+
+  /* ---------about---------- */
+  section.about.page {
+    padding: 44px 0 49px;
+    width: 86%;
+    row-gap: 42px;
+    grid-template-rows: 55% 40%;
+  }
+
+  .about-picture {
+    order: 2;
+  }
+
+  .about-picture img {
+    max-width: 260px;
+    max-height: 353.6px;
+  }
+
+  .about-text {
+    gap: 23px;
+  }
+
+  .about-text h3 {
+    padding: 0;
+    text-align: center;
+  }
+
+
+  .about-text p:nth-child(2),
+  .about-text p:nth-child(3) {
+    font-size: 15px;
+    line-height: 160%;
+    text-align: justify;
+  }
+
+  /* ----------pets----------- */
+  section.pets .page {
+    padding: 78px 0 42px;
+    gap: 47px;
+  }
+
+  .carousel {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .item .card:nth-child(2),
+  .item .card:nth-child(3) {
+    display: none;
+  }
+
+  .item {
+    margin: 0 auto;
+    display: flex;
+    /* width: 82.5%; */
+    justify-content: center;
+  }
+
+  .card p {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .card button {
+    font-size: 17px;
+    line-height: 130%;
+  }
+
+  .pets .page>button {
+    margin: 72px 0 0 0;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+  }
+
+  .button-left,
+  .button-right {
+    position: absolute;
+    top: 112%;
+  }
+
+  .button-left {
+    left: 21%;
+  }
+
+  .button-right {
+    right: 21%;
+  }
+
+  /* ---------donation----------- */
+  section.donation .page {
+    padding: 42px 0 42px;
+    grid-template-columns: 100%;
+    grid-template-rows: 67% 49%;
+    justify-content: center;
+    justify-items: center;
+    row-gap: 20px;
+    max-width: 300px;
+  }
+
+  section.donation .page {
+    padding: 42px 0 66px;
+    grid-template-columns: 100%;
+    grid-template-rows: 67% 36%;
+    justify-content: center;
+    justify-items: center;
+    row-gap: 33px;
+    max-width: 300px;
+  }
+
+  .donation-picture {
+    padding: 0;
+    order: 2;
+  }
+
+  .donation-picture img {
+    max-width: 260px;
+    max-height: 135.2px;
+    width: 100%;
+    height: auto;
+  }
+
+  .donation-text {
+    order: 1;
+    row-gap: 16px;
+    justify-items: center;
+    justify-content: center;
+    width: 94%;
+  }
+
+  .donation-text h3:first-child {
+    text-align: center;
+    font-size: 25px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+  }
+
+  .credit-card {
+    padding: 0 17px 0 14px;
+    width: 100%;
+  }
+
+  .credit-card span {
+    font-size: 15px;
+    line-height: 110%;
+  }
+
+  .donation-text p:nth-child(4) {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: justify;
+  }
+
+  a:has(.credit-card span) {
+    width: 100%;
+  }
+
+  /* ---------footer-------- */
+  footer {
+    max-height: 809px;
+  }
+
+  footer .page {
+    padding: 30px 0 0;
+    display: grid;
+    row-gap: 26px;
+    grid-template-columns: 100%;
+    grid-template-rows: 28.53% 30.45% 36.89%;
+    height: 809px;
+    /* justify-content: center; */
+    /* justify-items: center; */
+  }
+
+  .question,
+  .waiting,
+  .dog-picture {
+    padding: 0;
+
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+  }
+
+  .question {
+    display: grid;
+    row-gap: 28px;
+    justify-items: center;
+  }
+
+  .waiting {
+    display: grid;
+    row-gap: 33px;
+    row-gap: 24px;
+  }
+
+  .waiting h3 {
+    padding: 0 0 0 5px;
+    width: 98%;
+  }
+
+  .pin1 {
+    /* display: flex; */
+    align-items: flex-start;
+    column-gap: 19px;
+  }
+
+  div.pin1>div>img {
+    padding: 5px 0 0;
+  }
+
+  .dog-picture {
+    padding: 0;
+    grid-column: 1 / span 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .question h3,
+  .waiting h3 {
+    text-align: center;
+    font-size: 25px;
+    line-height: 130%;
+  }
+
+  .address1,
+  .address2 {
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+  }
+
+  .dog-picture img {
+    max-width: 260px;
+    max-height: 269px;
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+/*   ---320----   */
+@media screen and (max-width: 330px) {
+  html {
+    font-size: 14px;
   }
 
   .container {
     /* max-width: 320px; */
     max-width: 100%;
+  }
+
+  h3 {
+    font-size: 25px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+  }
+
+  header {
+    padding: 28px 11px 0;
+  }
+
+  .logo-subtitle {
+    /* font-size: 13px; */
+    line-height: 30px;
+    padding: 0 0 0 4px;
   }
 
   .page {
@@ -34,53 +337,64 @@
   /* ---------bigl----------- */
   .bigl {
     max-height: 823px;
-    /* height: 908px; */
     width: 100%;
     margin: -90px auto 0;
     padding: 90px 0 0 0;
+    /* border: 1px solid red; */
   }
-
 
   .bigl .page {
     grid-template-columns: 100%;
-    grid-template-rows: 34.14% 32.92%;
-    gap: 8.75rem;
-    /* 105px; */
+    grid-template-rows: 44% 21%;
+    gap: 10.5rem;
+    gap: 105px;
     justify-content: center;
   }
 
   .bigl-text {
-    padding: 106px 0 0 0;
+    padding: 59px 0 0;
+    display: grid;
     justify-items: center;
+    gap: 42px;
   }
 
   .bigl-text h1:first-child {
-    padding: 0 154px 0 0;
+    font-size: 25px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.06em;
   }
 
   .bigl-text p:nth-child(2) {
-    width: 65%;
+    font-size: 15px;
+    line-height: 160%;
+    width: 98%;
+    text-align: center;
   }
 
   .bigl-picture img {
-    max-width: 569px;
-    max-height: 593px;
-
-    width: 100%;
-    height: auto;
+    max-width: 260px;
+    max-height: 271.71px;
   }
+
+  .bigl-btn {
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+  }
+
+
 
   /* ---------about---------- */
   section.about.page {
-    padding: 67px 0 138px;
-    width: 56%;
-    max-height: 1048px;
-    display: grid;
-    row-gap: 4.714rem;
-    /* 66px; */
-    grid-template-columns: 100%;
-    grid-template-rows: 48.22% 51.77%;
-    justify-items: center;
+    padding: 44px 0 0;
+    width: 86%;
+    /* max-height: 974px; */
+    /* display: grid; */
+    row-gap: 42px;
+    /* grid-template-columns: 100%; */
+    grid-template-rows: 55% 40%;
+    /* justify-items: center; */
   }
 
   .about-picture {
@@ -88,72 +402,148 @@
   }
 
   .about-picture img {
-    max-width: 300px;
-    max-height: 408px;
-    width: 100%;
-    height: auto;
+    max-width: 260px;
+    max-height: 353.6px;
+    /* width: 100%; */
+    /* height: auto; */
   }
 
   .about-text {
     /* display: grid; */
-    gap: 10px;
-    order: 1;
+    gap: 23px;
+    /* order: 1; */
   }
 
   .about-text h3 {
-    padding: 14px 60px 0 0;
+    padding: 0;
+    text-align: center;
+  }
+
+
+  .about-text p:nth-child(2),
+  .about-text p:nth-child(3) {
+    font-size: 15px;
+    line-height: 160%;
+    text-align: justify;
   }
 
   /* ----------pets----------- */
   section.pets .page {
-    padding: 78px 0 100px;
+    padding: 78px 0 42px;
+    gap: 47px;
   }
 
-  #item-active .card:nth-child(3) {
+  .carousel {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .item .card:nth-child(2),
+  .item .card:nth-child(3) {
     display: none;
+  }
+
+  .item {
+    margin: 0 auto;
+    display: flex;
+    /* width: 82.5%; */
+    justify-content: center;
+  }
+
+  .card p {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .card button {
+    font-size: 17px;
+    line-height: 130%;
+  }
+
+  .pets .page>button {
+    margin: 72px 0 0 0;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+  }
+
+  .button-left,
+  .button-right {
+    position: absolute;
+    top: 112%;
+  }
+
+  .button-left {
+    left: 21%;
+  }
+
+  .button-right {
+    right: 21%;
   }
 
   /* ------help---------- */
   section.help .page {
-    padding: 84px 0 100px;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-    /* ----- */
-    gap: 59px;
+    padding: 42px 0 42px;
+    /* align-items: center; */
+    /* flex-direction: column; */
+    /* height: 100%; */
+    gap: 36px
   }
 
   .gifts {
-    display: flex;
-    flex: 1 1 100%;
-    justify-content: center;
+    /* display: flex; */
+    /* flex: 1 1 100%; */
+    justify-content: left;
     width: 100%;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 
-    max-width: 708px;
-    column-gap: 4.2857rem;
-    /* 60px; */
-    row-gap: 4rem;
-    /* 56px; */
+    max-width: 290px;
+    /* max-height: 555px; */
+    column-gap: 30px;
+    row-gap: 25px;
   }
 
   .some {
-    text-align: center;
-    width: 24%;
-    width: calc(170 / 708%);
+    /* width: 44.82%; */
+    width: calc(130 / 290 * 100%);
   }
+
+  .some h4 {
+    padding: 11px 0 0 0;
+
+    font-size: 15px;
+    line-height: 110%;
+  }
+
+  .some img {
+    scale: 0.83;
+  }
+
 
   /* ---------donation----------- */
   section.donation .page {
-    padding: 83px 0 100px;
+    padding: 42px 0 42px;
     /* display: grid; */
     grid-template-columns: 100%;
-    grid-template-rows: 36.01% 33.33%;
+    grid-template-rows: 67% 49%;
+    justify-content: center;
     justify-items: center;
-    row-gap: 8.8571rem;
-    /* 124px; */
-    max-width: 708px;
-    max-height: 783px;
+    row-gap: 20px;
+    max-width: 300px;
+    /* max-height: 542px; */
+  }
+
+  section.donation .page {
+    padding: 42px 0 66px;
+    /* display: grid; */
+    grid-template-columns: 100%;
+    grid-template-rows: 67% 36%;
+    justify-content: center;
+    justify-items: center;
+    row-gap: 33px;
+    max-width: 300px;
   }
 
   .donation-picture {
@@ -161,48 +551,128 @@
     order: 2;
   }
 
+  .donation-picture img {
+    max-width: 260px;
+    max-height: 135.2px;
+    width: 100%;
+    height: auto;
+  }
+
   .donation-text {
     /* display: grid; */
     order: 1;
-    row-gap: 19px;
-    justify-items: left;
-    width: 54%;
+    row-gap: 16px;
+    justify-items: center;
+    justify-content: center;
+    width: 94%;
+  }
+
+  .donation-text h3:first-child {
+    text-align: center;
+    font-size: 25px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
   }
 
   .credit-card {
-    /* display: flex; */
-    /* align-items: center; */
-    justify-content: space-between;
-    /* width: 350px; */
-    /* height: 43px; */
-    padding: 0 17px 0 5px;
+    padding: 0 17px 0 14px;
+    width: 100%;
+  }
+
+  .credit-card span {
+    font-size: 15px;
+    line-height: 110%;
+  }
+
+  .donation-text p:nth-child(4) {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: justify;
+  }
+
+  a:has(.credit-card span) {
+    width: 100%;
   }
 
   /* ---------footer-------- */
   footer {
-    max-height: 639px;
+    max-height: 809px;
   }
 
   footer .page {
+    padding: 30px 0 0;
     display: grid;
-    column-gap: 4.2142rem;
-    /* 59px; */
-    row-gap: 5.1428rem;
-    /* 72px; */
-    grid-template-columns: 40% 43%;
-    grid-template-rows: 40% 51%;
-    justify-content: center;
+    row-gap: 26px;
+    grid-template-columns: 100%;
+    grid-template-rows: 28.53% 30.45% 36.89%;
+    height: 809px;
+    /* justify-content: center; */
+    /* justify-items: center; */
+  }
+
+  .question,
+  .waiting,
+  .dog-picture {
+    padding: 0;
+
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+  }
+
+  .question {
+    display: grid;
+    row-gap: 28px;
+    justify-items: center;
+  }
+
+  .waiting {
+    display: grid;
+    row-gap: 33px;
+    row-gap: 24px;
+  }
+
+  .waiting h3 {
+    padding: 0 0 0 5px;
+    width: 98%;
+  }
+
+  .pin1 {
+    /* display: flex; */
+    align-items: flex-start;
+    column-gap: 19px;
+  }
+
+  div.pin1>div>img {
+    padding: 5px 0 0;
   }
 
   .dog-picture {
     padding: 0;
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 1;
     display: flex;
     justify-content: center;
   }
 
-  .question,
-  .waiting {
-    padding: 32px 0 0;
+  .question h3,
+  .waiting h3 {
+    text-align: center;
+    font-size: 25px;
+    line-height: 130%;
   }
+
+  .address1,
+  .address2 {
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+  }
+
+  .dog-picture img {
+    max-width: 260px;
+    max-height: 269px;
+    width: 100%;
+    height: auto;
+  }
+
 }
