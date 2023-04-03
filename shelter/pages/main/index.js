@@ -1,13 +1,12 @@
-console.log("Верстка страницы Main валидная: +4\n",
-  "логотип в хедере состоит из текстовых элементов: +1\n",
-  "страница содержит ровно один элемент h1: +1\n",
-  "добавлен favicon: +1\n",
-  "Вёрстка соответствует макету: +35\n",
-  "Требования к css +6\n",
-  "Интерактивность элементов +12\n",
-  "Страница Pets \n Проверка верстки: +7\n",
-  "Вёрстка соответствует макету: +15\n",
-  "Требования к css: +4\n",
-  "Интерактивность элементов: +14\n",
-  "Штрафы: НЕТ!\n",
-  "Итого: Ваша оценка - 100 баллов \n");
+const burgerMenu = document.querySelector('.burger-menu');
+const burgerList = document.querySelector('.burger-list');
+// const modal = document.querySelector('.modal');
+const headerBar = document.querySelector('.header-bar');
+
+function menuToggle1() {
+  console.log(burgerMenu.classList);
+  burgerMenu.classList.toggle('active');
+  burgerMenu.classList.toggle('inactive');
+  headerBar.classList.toggle('change');
+}
+

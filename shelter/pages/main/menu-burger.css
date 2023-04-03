@@ -1,10 +1,28 @@
 @media screen and (max-width: 767px) {
+  div.burger-menu {
+    display: block;
+  }
+
+  .active {
+    /* right: -39px; */
+    right: 0;
+    transition: all 0.4s ease-out;
+  }
+
+  .inactive {
+    /* right: -338px; */
+    right: -1000px;
+    transition: all 1s ease-in;
+  }
+
   .nav {
     display: none;
   }
 
   .header-bar {
     display: inline-block;
+    position: relative;
+    z-index: 5;
     cursor: pointer;
   }
 
@@ -14,83 +32,60 @@
     width: 30px;
     margin: 8px 0 5px;
     border: 2px solid;
-    border-width: 0px 0px 2px;
+    border-width: 0 0 2px;
     border-color: transparent transparent #F1CDB3 transparent;
-    transition: 0.4s;
+    transition: all 0.3s;
   }
 
-  .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
+  .header-bar.change {
+    display: flex;
   }
 
-  .change .bar2 {
-    opacity: 0;
+  .header-bar.change .bar1,
+  .header-bar.change .bar2,
+  .header-bar.change .bar3 {
+    width: 2px;
+    height: 30px;
+    margin: 5px 8px 0 0;
+    border-width: 0 2px 0 0;
+    border-color: transparent #F1CDB3 transparent transparent;
   }
 
-  .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-  }
-}
 
-/* --------------Window Burger----------------------------------- */
+  /* --------------Window Burger----------------------------------- */
 
-.burger-menu {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: -300px;
-  /* ----------------- */
-  width: 165px;
-  height: 250px;
+  div.burger-menu {
+    position: absolute;
+    /* top: -30px; */
+    /* right: -2000px; */
 
-  /* --------------- */
-  background: #f2785c;
-  box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.get-out {
-  font-size: 40px;
-  line-height: 40px;
-  color: #fff;
-  padding: 0 5px;
-}
-
-/* --------------Window Burger----------------------------------- */
-.burger-list {
-  display: flex;
-  flex-direction: column;
-  padding: 0 15px 30px 44px;
-  list-style: none;
-
-}
-
-.burger-item {
-  text-align: right;
-  margin-bottom: 10px;
-}
-
-.burger-link {
-  font-family: "Red Hat Text", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
-  text-decoration: none;
-  color: #ffffff;
-}
-
-/* ------------Media---------------------------- */
-
-@media screen and (max-width: 400px) {
-
-  /* -----------Menu Burger------------- */
-  /* ----UL burger-list + active----- */
-  .active {
-    right: 0px;
-    transition: all 0.5s ease-in-out;
+    z-index: 0;
+    width: 320px;
+    height: 823px;
+    background: #292929;
+    cursor: pointer;
   }
 
+  /* --------------Window Burger----------------------------------- */
+  .burger-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 30px 44px;
+    list-style: none;
+
+  }
+
+  .burger-item {
+    text-align: right;
+    margin-bottom: 10px;
+  }
+
+  .burger-link {
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+    color: #ffffff;
+  }
 }
