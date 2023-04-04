@@ -402,6 +402,7 @@ section.pets .page h3 {
   border-radius: 9px;
   background: #FAFAFA;
   cursor: pointer;
+  justify-content: center;
 }
 
 .card:hover {
