@@ -1,16 +1,28 @@
 @media screen and (max-width: 767px) {
+
+  /* --------------Window Burger------------ */
   div.burger-menu {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 248px 0 0 0;
+
+    position: absolute;
+    z-index: 2;
+    width: 320px;
+    /* height: 823px; */
+    height: 100vh;
+    background: #292929;
+    cursor: pointer;
   }
 
   .active {
-    /* right: -39px; */
     right: 0;
-    transition: all 0.4s ease-out;
+    transition: all 0.5s ease-out;
   }
 
   .inactive {
-    /* right: -338px; */
     right: -1000px;
     transition: all 1s ease-in;
   }
@@ -19,10 +31,44 @@
     display: none;
   }
 
+  .burger-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: 90%;
+    row-gap: 41px;
+  }
+
+  .burger-item {
+    text-align: center;
+  }
+
+  .burger-link {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 160%;
+    color: #FAFAFA;
+    text-decoration: none;
+  }
+
+  .burger-link.active-link {
+    color: #FAFAFA;
+    pointer-events: none;
+    padding-bottom: 9px;
+    border: 3px solid;
+    border-width: 0px 0px 3px;
+    border-color: transparent transparent #F1CDB3 transparent;
+  }
+
+  /* -------bar------- */
   .header-bar {
     display: inline-block;
     position: relative;
-    z-index: 5;
+    z-index: 3;
     cursor: pointer;
   }
 
@@ -34,12 +80,13 @@
     border: 2px solid;
     border-width: 0 0 2px;
     border-color: transparent transparent #F1CDB3 transparent;
-    transition: all 0.3s;
+    transition: all 0.5s;
   }
 
   .header-bar.change {
     display: flex;
   }
+
 
   .header-bar.change .bar1,
   .header-bar.change .bar2,
@@ -49,43 +96,5 @@
     margin: 5px 8px 0 0;
     border-width: 0 2px 0 0;
     border-color: transparent #F1CDB3 transparent transparent;
-  }
-
-
-  /* --------------Window Burger----------------------------------- */
-
-  div.burger-menu {
-    position: absolute;
-    /* top: -30px; */
-    /* right: -2000px; */
-
-    z-index: 0;
-    width: 320px;
-    height: 823px;
-    background: #292929;
-    cursor: pointer;
-  }
-
-  /* --------------Window Burger----------------------------------- */
-  .burger-list {
-    display: flex;
-    flex-direction: column;
-    padding: 0 15px 30px 44px;
-    list-style: none;
-
-  }
-
-  .burger-item {
-    text-align: right;
-    margin-bottom: 10px;
-  }
-
-  .burger-link {
-    font-family: "Red Hat Text", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 21px;
-    text-decoration: none;
-    color: #ffffff;
   }
 }
