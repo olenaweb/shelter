@@ -93,7 +93,14 @@
                 <img src="../../assets/icons/Arrow-left.svg" alt="Arrow-left">
               </button>
               <div class="item" id="item-active">
-                <div class="card">
+                <template id="template">
+                  <div data-name="pet" class="card">
+                    <img class="pet-img" alt="pet">
+                    <p><span class="pets-name"></span></p>
+                    <button>Learn more</button>
+                  </div>
+                </template>
+                <!-- <div class="card">
                   <img src="../../assets/images/katrine.png" alt="katrine">
                   <p>Katrine</p>
                   <button>Learn more</button>
@@ -107,7 +114,7 @@
                   <img src="../../assets/images/woody.png" alt="woody">
                   <p>Woody</p>
                   <button>Learn more</button>
-                </div>
+                </div> -->
               </div>
               <button class="button-right">
                 <img src="../../assets/icons/Arrow-right.svg" alt="Arrow-left">
@@ -227,6 +234,9 @@
     </footer>
   </div>
   <script src="index.js"></script>
+  <script type="module" src="script.js"></script>
+  <!-- <script type="module" src="../pets/pets.js"></script> -->
+
 </body>
 
 </html>
