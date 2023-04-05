@@ -28,6 +28,34 @@
             onclick="document.getElementById('modal').style.display='block'" href="#">Modal</a></li> -->
       </ul>
     </div>
+    <!-- -----popup----- -->
+    <div class="popup animate-popup">
+      <button class="button-close">
+        <img src="../../assets/icons/close.svg" alt="close">
+      </button>
+      <div class="popup-pet">
+        <div class="popup-img">
+        </div>
+        <div class="popup-txt">
+          <h3 class="popup-head">Jennifer</h3>
+          <div>
+            <h4>Dog - Labrador</h4>
+            <p>Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home.
+              This
+              girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm
+              in
+              the house if she has all of her favorite toys.</p>
+            <ul class="popup-list">
+              <li><span><b>Age:</b> 2 months</span></li>
+              <li><span><b>Inoculations:</b> none</span></li>
+              <li><span><b>Diseases:</b> none</span></li>
+              <li><span><b>Parasites</b>: none</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----popup end---- -->
     <header>
       <div class="page">
         <div class="logo">
@@ -86,6 +114,7 @@
       </section>
       <section class="pets" id="pets">
         <div class="page">
+
           <h3>Our friends who <br>are looking for a house</h3>
           <div class="carousel-wrapper" id="carousel-wrapper">
             <div class="carousel" id="carousel">
@@ -94,27 +123,12 @@
               </button>
               <div class="item" id="item-active">
                 <template id="template">
-                  <div data-name="pet" class="card">
+                  <div data-pet="pet" class="card">
                     <img class="pet-img" alt="pet">
                     <p><span class="pets-name"></span></p>
                     <button>Learn more</button>
                   </div>
                 </template>
-                <!-- <div class="card">
-                  <img src="../../assets/images/katrine.png" alt="katrine">
-                  <p>Katrine</p>
-                  <button>Learn more</button>
-                </div>
-                <div class="card">
-                  <img src="../../assets/images/jennifer.png" alt="jennifer">
-                  <p>Jennifer</p>
-                  <button>Learn more</button>
-                </div>
-                <div class="card">
-                  <img src="../../assets/images/woody.png" alt="woody">
-                  <p>Woody</p>
-                  <button>Learn more</button>
-                </div> -->
               </div>
               <button class="button-right">
                 <img src="../../assets/icons/Arrow-right.svg" alt="Arrow-left">
@@ -233,9 +247,9 @@
       </div>
     </footer>
   </div>
-  <script src="index.js"></script>
-  <script type="module" src="script.js"></script>
-  <!-- <script type="module" src="../pets/pets.js"></script> -->
+  <script src="menuBar.js"></script>
+  <script type="module" src="../pets/pets.js"></script>
+  <script type="module" src="popup.js"></script>
 
 </body>
 
