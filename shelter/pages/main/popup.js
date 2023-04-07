@@ -17,6 +17,7 @@ function afterLoad() {
   }
 }
 const popup = document.querySelector(".popup");
+const popupPet = document.querySelector(".popup-pet");
 const popupBtn = document.querySelector(".button-close");
 const modal = document.querySelector('.modal');
 const body = document.querySelector('body');
@@ -38,8 +39,8 @@ function popupOpen() {
 
   const windowHeight = window.innerHeight;
   const windowWidth = window.innerWidth;
-  const popupHeight = popup.offsetHeight;
-  const popupWidth = popup.offsetWidth;
+  const popupHeight = popupPet.offsetHeight;
+  const popupWidth = popupPet.offsetWidth;
   let topPopup = windowHeight / 2 - popupHeight / 2;
   let leftPopup = windowWidth / 2 - popupWidth / 2;
 
