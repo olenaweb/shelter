@@ -21,6 +21,8 @@ function petPanel(setPets) {
     loadContent(shelter[i]);
     let card = document.querySelectorAll(".card");
     card[i].dataset.pet = shelter[i].name;
+    card[i].dataset.id = shelter[i].id;
+    // card[i].classList.add("animate");
     let petImg = document.querySelectorAll(".pet-img");
     petImg[i].setAttribute("src", shelter[i].img);
     petImg[i].setAttribute("alt", shelter[i].name);

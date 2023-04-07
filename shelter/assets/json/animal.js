@@ -1,6 +1,7 @@
 const animal =
   [
     {
+      "id": 0,
       "name": "Jennifer",
       "img": "../../assets/images/jennifer.png",
       "type": "Dog",
@@ -18,6 +19,7 @@ const animal =
       ]
     },
     {
+      "id": 1,
       "name": "Sophia",
       "img": "../../assets/images/sophia.png",
       "type": "Dog",
@@ -35,6 +37,7 @@ const animal =
       ]
     },
     {
+      "id": 2,
       "name": "Woody",
       "img": "../../assets/images/woody.png",
       "type": "Dog",
@@ -53,6 +56,7 @@ const animal =
       ]
     },
     {
+      "id": 3,
       "name": "Scarlett",
       "img": "../../assets/images/scarlett.png",
       "type": "Dog",
@@ -70,6 +74,7 @@ const animal =
       ]
     },
     {
+      "id": 4,
       "name": "Katrine",
       "img": "../../assets/images/katrine.png",
       "type": "Cat",
@@ -87,6 +92,7 @@ const animal =
       ]
     },
     {
+      "id": 5,
       "name": "Timmy",
       "img": "../../assets/images/timmy.png",
       "type": "Cat",
@@ -105,6 +111,7 @@ const animal =
       ]
     },
     {
+      "id": 6,
       "name": "Freddie",
       "img": "../../assets/images/freddie.png",
       "type": "Cat",
@@ -122,6 +129,7 @@ const animal =
       ]
     },
     {
+      "id": 7,
       "name": "Charly",
       "img": "../../assets/images/charly.png",
       "type": "Dog",

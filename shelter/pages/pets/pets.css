@@ -51,10 +51,6 @@ header {
   padding: 30px 0 33px;
 }
 
-/* ----------popup----------- */
-
-
-/* -------popup---end--------- */
 /* --------carousel----------- */
 .pets {
   padding: 0;
@@ -97,6 +93,11 @@ header {
   background: #F1CDB3;
   border: 2px solid #F1CDB3;
   color: #292929;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
 }
 
 
@@ -106,6 +107,7 @@ header {
   pointer-events: none;
 }
 
+/* .none-active:disabled  */
 .none-active:hover,
 .none-active:active {
   border: 2px solid #CDCDCD;
@@ -116,10 +118,13 @@ header {
 .active-btn {
   border: 2px solid #F1CDB3;
   color: #292929;
+  cursor: pointer;
 }
 
+/* .active-btn:enabled, */
 .center:hover,
-.active-btn:hover {
+.active-btn:hover,
+.active-btn:active {
   background: #FDDCC4;
   border: 2px solid #FDDCC4;
 }

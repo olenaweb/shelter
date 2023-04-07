@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../../assets/icons/favicon.ico" rel="shortcut icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
   <link rel="stylesheet" href="../main/style.css">
   <link rel="stylesheet" href="../main/fonts.css">
   <link rel="stylesheet" href="pets.css">
@@ -92,7 +93,7 @@
           <div class="carousel2" id="carousel">
             <div class="item2" id="item-active">
               <template id="template">
-                <div class="card">
+                <div data-pet="pet" data-id=1 class="card">
                   <img class="pet-img" alt="pet">
                   <p><span class="pets-name"></span></p>
                   <button>Learn more</button>
@@ -102,16 +103,22 @@
           </div>
           <!-- </div> -->
           <div class="navigation">
-            <button class="nav-btn none-active"><img src="../../assets/icons/arrow-left-end.svg"
-                alt="Arrow-left"></button>
-            <!-- disabled -->
-            <!-- <button disabled class="nav-btn"><img src="../../assets/icons/arrow-left-end.svg" alt="Arrow-left"></button> -->
-            <button class="nav-btn none-active"><img src="../../assets/icons/arrow-left-one.svg" alt="Arrow-left-one">
+            <button class="nav-btn none-active" disabled id="end-left">
+              <!-- <img src="../../assets/icons/arrow-left-end.svg" alt="Arrow-left"> -->
+              <i class="fa-solid fa-angles-left"></i>
             </button>
-            <button class="nav-btn center"><img src="../../assets/icons/arrow-one.svg" alt="Arrow-one"></button>
-            <button class="nav-btn active-btn"><img src="../../assets/icons/arrow-right-one.svg" alt="Arrow-right-one">
+            <button class="nav-btn none-active" disabled id="left">
+              <!-- <img src="../../assets/icons/arrow-left-one.svg" alt="Arrow-left-one"> -->
+              <i class="fa-solid fa-angle-left"></i>
             </button>
-            <button class="nav-btn active-btn"><img src="../../assets/icons/arrow-right-end.svg" alt="arrow-right-end">
+            <button class="nav-btn center" id="center">1</button>
+            <button class="nav-btn active-btn" id="right">
+              <!-- <img src="../../assets/icons/arrow-right-one.svg" alt="Arrow-right-one"> -->
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
+            <button class="nav-btn active-btn" id="end-right">
+              <!-- <img src="../../assets/icons/arrow-right-end.svg" alt="arrow-right-end"> -->
+              <i class="fa-solid fa-angles-right"></i>
             </button>
           </div>
         </div>
@@ -157,7 +164,7 @@
       </div>
     </footer>
   </div>
-  <script type="module" src="pets.js"></script>
+  <script type="module" src="petsPagination.js"></script>
   <script type="module" src="../main/popup.js"></script>
   <script src="../main/menuBar.js"></script>
 </body>
