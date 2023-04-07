@@ -44,7 +44,7 @@ function popupOpen() {
   let leftPopup = windowWidth / 2 - popupWidth / 2;
 
   popup.style.top = topPopup.toString() + 'px';
-  popup.style.left = leftPopup.toString() + 'px';;
+  popup.style.left = leftPopup.toString() + 'px';
 }
 
 function showCard(petName) {
