@@ -176,6 +176,5 @@ function getBoard() {
       k++;
     }
   }
-  // console.log('table = ', table);
 }
 
