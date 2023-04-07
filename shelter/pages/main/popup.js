@@ -16,6 +16,7 @@ function afterLoad() {
     })
   }
 }
+
 const popup = document.querySelector(".popup");
 const popupPet = document.querySelector(".popup-pet");
 const popupBtn = document.querySelector(".button-close");
@@ -83,3 +84,4 @@ window.onclick = function (event) {
   }
 }
 // -----------------popup--------------------
+export default afterLoad;

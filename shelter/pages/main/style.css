@@ -67,8 +67,9 @@ body {
 .animate {
   -webkit-animation: animatezoom 1.5s;
   animation: animatezoom 1.5s;
-  /* opacity: 0; */
 }
+
+
 
 @-webkit-keyframes animatezoom {
   from {
@@ -556,6 +557,15 @@ section.pets>.page>h3 {
   display: flex;
   width: 82.5%;
   justify-content: space-between;
+}
+
+.card.animate {
+  display: grid;
+  gap: 30px;
+  border-radius: 9px;
+  background: #FAFAFA;
+  cursor: pointer;
+  justify-content: center;
 }
 
 .card {
