@@ -1,7 +1,7 @@
 const burgerMenu = document.querySelector('.burger-menu');
 const burgerList = document.querySelector('.burger-list');
-const modal = document.querySelector('.modal');
 const headerBar = document.querySelector('.header-bar');
+const modal = document.querySelector('.modal');
 const body = document.querySelector('body');
 
 function menuToggle() {
@@ -19,13 +19,16 @@ function menuToggle() {
 }
 
 burgerMenu.addEventListener('click', (event) => {
-  console.log('event.target = ', event.target);
+  // console.log('event.target = ', event.target);
   menuToggle();
 });
 
 window.onclick = function (event) {
-  console.log('event.target = ', event.target);
+  // console.log('event.target = ', event.target);
   if (event.target == modal) {
     menuToggle();
   }
 }
+
+
+

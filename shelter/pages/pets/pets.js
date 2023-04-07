@@ -1,50 +1,33 @@
-let shelter = [
-  {
-    image: "../../assets/images/katrine.png",
-    name: "Katrine"
-  },
-  {
-    image: "../../assets/images/jennifer.png",
-    name: "Jennifer"
-  },
-  {
-    image: "../../assets/images/woody.png",
-    name: "Woody"
-  },
-  {
-    image: "../../assets/images/sophia.png",
-    name: "Sophia"
-  },
-  {
-    image: "../../assets/images/timmy.png",
-    name: "Timmy"
-  },
-  {
-    image: "../../assets/images/charly.png",
-    name: "Charly"
-  },
-  {
-    image: "../../assets/images/scarlett.png",
-    name: "Scarlett"
-  },
-  {
-    image: "../../assets/images/freddie.png",
-    name: "Freddie"
-  },
-];
-
+// --------загрузка карточек------------
+"use strict";
+import shelter from "../../assets/json/animal.js";
+let setPets;
 let template = document.querySelector("#template");
+const itemActive = document.querySelector("#item-active");
+if (itemActive.classList.contains("item2")) {
+  setPets = 8;
+  console.log('pagePets = ', setPets);
+} else {
+  setPets = 3;
+  console.log('pagePets = ', setPets);
+}
 
 document.addEventListener("DOMContentLoaded", function () {
-  for (let i = 0; i < shelter.length; i++) {
+  petPanel(setPets);
+});
+
+function petPanel(setPets) {
+  for (let i = 0; i < setPets; i++) {
     loadContent(shelter[i]);
+    let card = document.querySelectorAll(".card");
+    card[i].dataset.pet = shelter[i].name;
     let petImg = document.querySelectorAll(".pet-img");
-    petImg[i].setAttribute("src", shelter[i].image);
+    petImg[i].setAttribute("src", shelter[i].img);
     petImg[i].setAttribute("alt", shelter[i].name);
     let petsName = document.querySelectorAll(".pets-name");
     petsName[i].textContent = shelter[i].name;
   }
-});
+}
 
 function loadContent() {
   let templateClone = template.content.cloneNode(true);

@@ -59,6 +59,34 @@
     <main>
       <section class="pets" id="pets">
         <div class="page">
+          <!-- -----popup----- -->
+          <div class="popup animate-popup">
+            <button class="button-close">
+              <img src="../../assets/icons/close.svg" alt="close">
+            </button>
+            <div class="popup-pet">
+              <div class="popup-img">
+              </div>
+              <div class="popup-txt">
+                <h3 class="popup-head">Jennifer</h3>
+                <div>
+                  <h4>Dog - Labrador</h4>
+                  <p>Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home.
+                    This
+                    girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm
+                    in
+                    the house if she has all of her favorite toys.</p>
+                  <ul class="popup-list">
+                    <li><span><b>Age:</b> 2 months</span></li>
+                    <li><span><b>Inoculations:</b> none</span></li>
+                    <li><span><b>Diseases:</b> none</span></li>
+                    <li><span><b>Parasites</b>: none</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- -----popup end---- -->
           <h1>Our friends who <br>are looking for a house</h1>
           <!-- <div class="carousel-wrapper" id="carousel-wrapper"> -->
           <div class="carousel2" id="carousel">
@@ -129,8 +157,9 @@
       </div>
     </footer>
   </div>
-  <script src="pets.js"></script>
-  <script src="../main/index.js"></script>
+  <script type="module" src="pets.js"></script>
+  <script type="module" src="../main/popup.js"></script>
+  <script src="../main/menuBar.js"></script>
 </body>
 
 </html>
