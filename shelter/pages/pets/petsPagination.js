@@ -168,7 +168,7 @@ function petPanel() {
         let card = document.querySelectorAll(".card");
         card[i].dataset.pet = shelter[unit].name;
         card[i].dataset.id = shelter[unit].id;
-        card[i].classList.add("animate");
+        card[i].classList.add("animateslow");
         let petImg = document.querySelectorAll(".pet-img");
         petImg[i].setAttribute("src", shelter[unit].img);
         petImg[i].setAttribute("alt", shelter[unit].name);
@@ -183,7 +183,7 @@ function petPanel() {
         let card = document.querySelectorAll(".card");
         card[i].dataset.pet = shelter[unit].name;
         card[i].dataset.id = shelter[unit].id;
-        card[i].classList.add("animate");
+        card[i].classList.add("animateslow");
         let petImg = document.querySelectorAll(".pet-img");
         petImg[i].setAttribute("src", shelter[unit].img);
         petImg[i].setAttribute("alt", shelter[unit].name);
@@ -198,7 +198,7 @@ function petPanel() {
         let card = document.querySelectorAll(".card");
         card[i].dataset.pet = shelter[unit].name;
         card[i].dataset.id = shelter[unit].id;
-        card[i].classList.add("animate");
+        card[i].classList.add("animateslow");
         let petImg = document.querySelectorAll(".pet-img");
         petImg[i].setAttribute("src", shelter[unit].img);
         petImg[i].setAttribute("alt", shelter[unit].name);

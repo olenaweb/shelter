@@ -69,6 +69,10 @@ body {
   animation: animatezoom 1.5s;
 }
 
+.animateslow {
+  -webkit-animation: animatezoom 2.5s;
+  animation: animatezoom 2.5s;
+}
 
 
 @-webkit-keyframes animatezoom {
@@ -559,7 +563,7 @@ section.pets>.page>h3 {
   justify-content: space-between;
 }
 
-.card.animate {
+.card.animateslow {
   display: grid;
   gap: 30px;
   border-radius: 9px;
