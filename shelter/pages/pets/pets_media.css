@@ -39,10 +39,10 @@
         display: grid;
       }
 
-      .item2 .card:last-child,
+      /* .item2 .card:last-child,
       .item2 .card:nth-last-child(2) {
         display: none;
-      }
+      } */
     }
 
     @media screen and (max-width: 750px) {
@@ -70,13 +70,13 @@
         display: grid;
       }
 
-      .item2 .card:nth-child(5),
+      /* .item2 .card:nth-child(5),
       .item2 .card:nth-child(6),
       .item2 .card:nth-child(7),
       .item2 .card:nth-child(8),
       .item2 .card:last-child {
         display: none;
-      }
+      } */
 
       .item2 {
         margin: 0 auto;
@@ -144,13 +144,13 @@
         display: grid;
       }
 
-      .item2 .card:nth-child(5),
+      /* .item2 .card:nth-child(5),
       .item2 .card:nth-child(6),
       .item2 .card:nth-child(7),
       .item2 .card:nth-child(8),
       .item2 .card:last-child {
         display: none;
-      }
+      } */
 
       .item2 {
         margin: 0 auto;
