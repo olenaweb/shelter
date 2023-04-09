@@ -38,7 +38,7 @@
      gap: 10px;
    }
 
-   .item .card:nth-child(3) {
+   .item .content .card:nth-child(3) {
      display: none;
    }
  }
