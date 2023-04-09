@@ -563,7 +563,7 @@ section.pets>.page>h3 {
   justify-content: space-between;
 }
 
-.card.animateslow {
+.card.animate {
   display: grid;
   gap: 30px;
   border-radius: 9px;
@@ -598,6 +598,8 @@ section.pets>.page>h3 {
   width: 100%;
   height: auto;
   border-radius: 9px 9px 0px 0px;
+  opacity: 1;
+  /* transition: all 500ms ease-in-out; */
 }
 
 .card p {
