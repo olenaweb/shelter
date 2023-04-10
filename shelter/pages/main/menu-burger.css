@@ -9,7 +9,7 @@
     padding: 248px 0 0 0;
 
     position: absolute;
-    z-index: 2;
+    z-index: 10;
     width: 320px;
     /* height: 823px; */
     height: 100vh;
@@ -17,7 +17,7 @@
     cursor: pointer;
   }
 
-  .active {
+  .active-bar {
     right: 0;
     transition: all 0.5s ease-out;
   }
@@ -68,7 +68,7 @@
   .header-bar {
     display: inline-block;
     position: relative;
-    z-index: 3;
+    z-index: 11;
     cursor: pointer;
   }
 

@@ -11,6 +11,41 @@
     width: calc(600 / 719 * 100%);
   }
 
+  .carousel {
+    max-width: 600px;
+    width: 100%;
+    left: -600px;
+  }
+
+  .content {
+    justify-content: center;
+    column-gap: 40px;
+  }
+
+  .item {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .item .card:nth-child(2),
+  .item .card:nth-child(3) {
+    display: none;
+  }
+
+  /* .button-left,
+  .button-right {
+    position: absolute;
+  } */
+
+  .button-left {
+    left: 0;
+  }
+
+  .button-right {
+    right: 0;
+  }
+
   /* ----popup----- */
   .popup.animate-popup {
     max-width: 270px;
@@ -79,11 +114,28 @@
     padding: 0;
   }
 
+}
+
+/* --- 480 -- */
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+
+  .page {
+    width: calc(600 / 640 * 100%);
+  }
+
   .carousel {
-    margin: 0 auto;
-    position: relative;
-    width: 100%;
-    max-width: 612px;
+    max-width: 600px;
+    /* width: 100%; */
+    width: 600px;
+    left: -600px;
+  }
+
+  .content {
+    /* justify-content: center; */
+    column-gap: 40px;
   }
 
   .item {
@@ -95,26 +147,6 @@
   .item .card:nth-child(2),
   .item .card:nth-child(3) {
     display: none;
-  }
-
-  .button-left,
-  .button-right {
-    position: absolute;
-  }
-
-  .button-left {
-    left: 19%;
-  }
-
-  .button-right {
-    right: 19%;
-  }
-}
-
-/* --- 480 -- */
-@media screen and (max-width: 640px) {
-  html {
-    font-size: 14px;
   }
 
   /* ---------about---------- */
@@ -157,24 +189,6 @@
     gap: 47px;
   }
 
-  .carousel {
-    margin: 0 auto;
-    position: relative;
-    width: 100%;
-    max-width: 320px;
-  }
-
-  .item .card:nth-child(2),
-  .item .card:nth-child(3) {
-    display: none;
-  }
-
-  .item {
-    margin: 0 auto;
-    display: flex;
-    /* width: 82.5%; */
-    justify-content: center;
-  }
 
   .card p {
     font-size: 20px;
@@ -193,19 +207,7 @@
     letter-spacing: 0.06em;
   }
 
-  .button-left,
-  .button-right {
-    position: absolute;
-    top: 112%;
-  }
 
-  .button-left {
-    left: 21%;
-  }
-
-  .button-right {
-    right: 21%;
-  }
 
   /* ---------donation----------- */
   section.donation .page {
@@ -364,10 +366,53 @@
     font-size: 14px;
   }
 
+  .page {
+    width: calc(300 / 320 * 100%);
+  }
+
   .container {
     /* max-width: 320px; */
     max-width: 100%;
   }
+
+  .carousel {
+    max-width: 320px;
+    width: 320px;
+    left: -320px;
+  }
+
+  .item {
+    margin: 0 auto;
+    display: flex;
+    /* width: 82.5%; */
+    justify-content: center;
+  }
+
+  .content {
+    justify-content: center;
+    column-gap: 0;
+  }
+
+  .button-left,
+  .button-right {
+    position: absolute;
+    top: 72%;
+  }
+
+  .button-left {
+    left: 18%;
+  }
+
+  .button-right {
+    right: 18%;
+  }
+
+  .item .card:nth-child(2),
+  .item .card:nth-child(3) {
+    display: none;
+  }
+
+
 
   /* ----popup----- */
   .popup.animate-popup {
@@ -446,9 +491,7 @@
     padding: 0 0 0 4px;
   }
 
-  .page {
-    width: calc(300 / 320 * 100%);
-  }
+
 
   /* ---------------------------------------------- */
   .nav {
@@ -554,24 +597,6 @@
     gap: 47px;
   }
 
-  .carousel {
-    margin: 0 auto;
-    position: relative;
-    width: 100%;
-    max-width: 320px;
-  }
-
-  .item .card:nth-child(2),
-  .item .card:nth-child(3) {
-    display: none;
-  }
-
-  .item {
-    margin: 0 auto;
-    display: flex;
-    /* width: 82.5%; */
-    justify-content: center;
-  }
 
   .card p {
     font-size: 20px;
@@ -590,19 +615,7 @@
     letter-spacing: 0.06em;
   }
 
-  .button-left,
-  .button-right {
-    position: absolute;
-    top: 112%;
-  }
 
-  .button-left {
-    left: 21%;
-  }
-
-  .button-right {
-    right: 21%;
-  }
 
   /* ------help---------- */
   section.help .page {

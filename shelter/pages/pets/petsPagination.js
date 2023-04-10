@@ -314,3 +314,4 @@ function getBoard() {
   console.log('table3 = ', table3);
 }
 
+// export default shuffle;

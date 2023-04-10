@@ -1,0 +1,34 @@
+.move-right {
+  animation-name: go-right;
+  animation-duration: 1s;
+}
+
+@keyframes go-right {
+  from {
+    left: -1200px;
+  }
+
+  to {
+    left: -2400px;
+  }
+}
+
+.move-left {
+  animation-name: go-left;
+  animation-duration: 1s;
+}
+
+@keyframes go-left {
+  from {
+    left: -1200px;
+  }
+
+  to {
+    left: 0px;
+  }
+}
+
+
+.hidden {
+  display: none;
+}
