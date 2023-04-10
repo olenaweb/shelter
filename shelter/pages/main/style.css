@@ -514,12 +514,11 @@ section.pets>.page>h3 {
 
 
 .carousel {
-  display: inline;
-  position: relative;
+  display: flex;
   max-width: 1200px;
   width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
+  /* flex-wrap: nowrap; */
+  position: relative;
   left: -1200px;
 }
 
@@ -577,14 +576,14 @@ section.pets>.page>h3 {
   justify-content: space-between;
 }
 
-.card.animate {
+/* .card.animate {
   display: grid;
   gap: 30px;
   border-radius: 9px;
   background: #FAFAFA;
   cursor: pointer;
   justify-content: center;
-}
+} */
 
 .card {
   display: grid;

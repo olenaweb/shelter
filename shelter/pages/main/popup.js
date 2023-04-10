@@ -120,13 +120,10 @@ burgerMenu.addEventListener('click', (event) => {
 });
 
 window.onclick = function (event) {
-  console.log('event.target = ', event.target);
-
   if (event.target == modal) {
     popupClose();
   }
   if (event.target == modalBar) {
-    console.log('event.target == modalBar = ', modalBar);
     menuToggle();
   }
 }
