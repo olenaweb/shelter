@@ -119,23 +119,23 @@ function loadContent(item) {
 }
 
 // --------------Carousel--------------
-window.onresize = function (event) {
-  loadPets();
-};
+// window.onresize = function (event) {
+//   loadPets();
+// };
 
-function loadPets() {
-  let size = window.innerWidth;
-  if (size > 1071) {
-    viewDone.view1 = 1;
-    maxRange = 6;    // количество экранов пагинации
-  } else if (size < 1071 && size > 601) {
-    viewDone.view1 = 2;
-    maxRange = 8;
-  } else if (size < 601) {
-    viewDone.view1 = 3;
-    maxRange = 16;
-  }
-}
+// function loadPets() {
+//   let size = window.innerWidth;
+//   if (size > 1071) {
+//     viewDone.view1 = 1;
+//     maxRange = 6;    // количество экранов пагинации
+//   } else if (size < 1071 && size > 601) {
+//     viewDone.view1 = 2;
+//     maxRange = 8;
+//   } else if (size < 601) {
+//     viewDone.view1 = 3;
+//     maxRange = 16;
+//   }
+// }
 
 const btnLeft = document.querySelector("#btn-left");
 const btnRight = document.querySelector(".button-right");

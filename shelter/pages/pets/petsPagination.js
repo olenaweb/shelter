@@ -64,7 +64,9 @@ function clickEventHandler() {
   // function сохраняет контекст this, ()=>{} не сохраняет контекст this !!!!!!!!!!
   // поэтому передавалось значение Nav_BTN[i]
   for (let i = 0; i < Nav_BTN.length; i++) {
-    Nav_BTN[i].addEventListener('click', function () {
+    Nav_BTN[i].addEventListener('click', function (e) {
+      console.log('e.target = ', e.target);
+      console.log(' e.target !== e.currentTarget= ', e.target !== e.currentTarget);
       onClickBTN(this);
     })
   }
