@@ -23,6 +23,7 @@ const popupBtn = document.querySelector(".button-close");
 const modal = document.querySelector('.modal');
 const body = document.querySelector('body');
 
+
 popupBtn.addEventListener('click', (event) => {
   popupClose();
 });
@@ -77,11 +78,55 @@ function showCard(petName) {
   }
 }
 
-window.onclick = function (event) {
+// window.onclick = function (event) {
+//   if (event.target == modal) {
+//     popupClose();
+//   }
+// }
+// -----------------popup--------------------
+export default afterLoad;
+
+
+
+// --------MenuBar------------------------------
+
+const burgerMenu = document.querySelector('.burger-menu');
+// const burgerList = document.querySelector('.burger-list');
+const headerBar = document.querySelector('.header-bar');
+const modalBar = document.querySelector('.modal-bar');
+
+const bar = document.querySelector(".header-bar");
+bar.addEventListener('click', menuToggle);
+
+// const body = document.querySelector('body');
+
+function menuToggle() {
+  console.log(burgerMenu.classList);
+  burgerMenu.classList.toggle('active-bar');
+  burgerMenu.classList.toggle('inactive');
+  headerBar.classList.toggle('change');
+  if (burgerMenu.classList.contains('active-bar')) {
+    modalBar.style.display = "block";
+    body.style.overflow = 'hidden';
+  } else {
+    modalBar.style.display = "none";
+    body.style.overflow = 'auto';
+  }
+}
+
+burgerMenu.addEventListener('click', (event) => {
   // console.log('event.target = ', event.target);
+  menuToggle();
+});
+
+window.onclick = function (event) {
+  console.log('event.target = ', event.target);
+
   if (event.target == modal) {
     popupClose();
   }
+  if (event.target == modalBar) {
+    console.log('event.target == modalBar = ', modalBar);
+    menuToggle();
+  }
 }
-// -----------------popup--------------------
-export default afterLoad;

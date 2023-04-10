@@ -102,6 +102,7 @@ const btnRight = document.querySelector(".button-right");
 const carousel = document.querySelector("#carousel");
 const itemLeft = document.querySelector("#item-left");
 const itemRight = document.querySelector("#item-right");
+const itemActive = document.querySelector("#item-active")
 
 btnLeft.addEventListener("click", moveLeft);
 btnRight.addEventListener("click", moveRight);
@@ -124,13 +125,13 @@ carousel.addEventListener("animationend", (animationEvent) => {
   // console.log('animationEvent = ', animationEvent);
   if (animationEvent.animationName == "go-left") {
     carousel.classList.remove("move-left");
-    document.querySelector("#item-active").innerHTML = itemLeft.innerHTML;
+    itemActive.innerHTML = itemLeft.innerHTML;
     newContent();
     petPanel1('#item-left');
 
   } else {
     carousel.classList.remove("move-right");
-    document.querySelector("#item-active").innerHTML = itemRight.innerHTML;
+    itemActive.innerHTML = itemRight.innerHTML;
     newContent();
     petPanel3('#item-right');
   }

@@ -52,10 +52,11 @@ body {
   font-size: calc(20rem / 16);
 }
 
-.modal.animate {
+.modal.animate,
+.modal-bar.animate {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   left: 0;
   top: 0;
   width: 100%;
@@ -185,7 +186,7 @@ h4 {
   display: none;
   position: fixed;
   /* margin: -38px -52px 0 0; */
-  z-index: 1;
+  z-index: 10;
   max-width: 952px;
   width: 100%;
   max-height: 552px;
@@ -523,14 +524,13 @@ section.pets>.page>h3 {
 }
 
 .button-left,
-.btn-left,
 .button-right,
 .button-close {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  z-index: 5;
+  z-index: 1;
   width: 52px;
   height: 52px;
   top: 51%;
