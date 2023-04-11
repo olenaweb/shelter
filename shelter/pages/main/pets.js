@@ -181,6 +181,7 @@ carousel.addEventListener("animationend", (animationEvent) => {
   if (animationEvent.animationName == "go-left" || animationEvent.animationName == "go-left2" || animationEvent.animationName == "go-left3") {
     itemRight.innerHTML = itemActive.innerHTML;
     itemActive.innerHTML = itemLeft.innerHTML;
+
     addSet();
     petPanel1('#item-left');
     newHanler();
@@ -208,13 +209,22 @@ function addSet() {
   newSet.forEach((item) => {
     oldSet.push(item);
   })
+  let oldactiveSet = [];
+  let activeSet = itemActive.querySelectorAll(".item .card");
+  activeSet.forEach((card) => {
+    // console.log(' card.dataset.id= ', card.dataset.id);
+    oldactiveSet.push(+card.dataset.id);
+  })
   newSet = [];
   for (let i = 0; i < 3; i++) {
     do {
       nn = Math.floor(Math.random() * 8);
-    } while (oldSet.includes(nn) || newSet.includes(nn))
+    } while (oldactiveSet.includes(nn) || newSet.includes(nn))
     newSet.push(nn);
   }
+  // console.log(' oldSet= ', oldSet);
+  // console.log('oldactiveSet = ', oldactiveSet);
+  // console.log('newSet = ', newSet);
 }
 
 
