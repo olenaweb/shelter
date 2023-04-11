@@ -2,7 +2,7 @@
 "use strict";
 let card;
 let viewDone = {};
-viewDone.view1 = 1;  //  size (window.innerwidth) > 1071 , 1,2,3 в зависимости от window.innerwidth
+viewDone.view1 = 3;  //  size (window.innerwidth) > 1071 , 3,2,1 в зависимости от window.innerwidth
 let oldSet = [0, 1, 2];
 let newSet = [0, 1, 2];
 import shelter from "../../assets/json/animal.js";
@@ -33,16 +33,13 @@ const carouselSize = document.querySelector(".carousel");
 function changeSlider() {
   let size = sizePage.clientWidth;
   carouselSize.style.left = `-${size}px`;
-  console.log(' size= ', size);
-  console.log('carouselSize.style.left = ', `-${size}px`);
   if (size > 1071) {
-    viewDone.view1 = 1;
+    viewDone.view1 = 3;
   } else if (size < 1071 && size > 601) {
     viewDone.view1 = 2;
   } else if (size < 601) {
-    viewDone.view1 = 3;
+    viewDone.view1 = 1;
   }
-  console.log(' viewDone.view1= ', viewDone.view1);
 }
 
 // -----------------------------------
@@ -51,6 +48,7 @@ function petPanel1(item) {
   for (let elem of elems) {
     elem.remove();
   }
+  let count = viewDone.view1;
   // itemCarousel.innerHTML = '';
   // console.log('shelter = ', shelter);
   for (let i = 0; i < 3; i++) {
@@ -71,6 +69,8 @@ function petPanel1(item) {
 }
 
 function petPanel2(item) {
+  let count = viewDone.view1;
+
   for (let i = 0; i < 3; i++) {
     loadContent(item);
     card = document.querySelectorAll("#item-active .card");
@@ -94,6 +94,7 @@ function petPanel3(item) {
   for (let elem of elems) {
     elem.remove();
   }
+  let count = viewDone.view1;
 
   for (let i = 0; i < 3; i++) {
     loadContent(item);
@@ -143,13 +144,13 @@ btnRight.addEventListener("click", moveRight);
 
 function moveRight() {
   switch (viewDone.view1) {
-    case (1):
+    case (3):
       carousel.classList.add("move-right");
       break;
     case (2):
       carousel.classList.add("move-right2");
       break;
-    case (3):
+    case (1):
       carousel.classList.add("move-right3");
       break;
   }
@@ -161,13 +162,13 @@ function moveRight() {
 function moveLeft() {
 
   switch (viewDone.view1) {
-    case (1):
+    case (3):
       carousel.classList.add("move-left");
       break;
     case (2):
       carousel.classList.add("move-left2");
       break;
-    case (3):
+    case (1):
       carousel.classList.add("move-left3")
       break;
   }
@@ -185,7 +186,7 @@ carousel.addEventListener("animationend", (animationEvent) => {
   carousel.classList.remove("move-right");
   carousel.classList.remove("move-right2");
   carousel.classList.remove("move-right3");
-  if (animationEvent.animationName == "go-left") {
+  if (animationEvent.animationName == "go-left" || animationEvent.animationName == "go-left2" || animationEvent.animationName == "go-left3") {
     itemRight.innerHTML = itemActive.innerHTML;
     itemActive.innerHTML = itemLeft.innerHTML;
     addSet();
@@ -224,21 +225,5 @@ function addSet() {
   }
 }
 
-// function addSet() {
-//   let nn;
-//   newSet = [];
-//   for (let i = 0; i < 3; i++) {
-//     do {
-//       nn = Math.floor(Math.random() * 8);
-//     } while (oldSet.includes(nn) || newSet.includes(nn))
-//     newSet.push(nn);
-//   }
-//   console.log('oldSet = ', oldSet);
-//   console.log('newSet = ', newSet);
-//   oldSet = [];
-//   newSet.forEach((item) => {
-//     oldSet.push(item);
-//   })
-// }
 
 
