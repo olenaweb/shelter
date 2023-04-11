@@ -65,8 +65,8 @@ function clickEventHandler() {
   // поэтому передавалось значение Nav_BTN[i]
   for (let i = 0; i < Nav_BTN.length; i++) {
     Nav_BTN[i].addEventListener('click', function (e) {
-      console.log('e.target = ', e.target);
-      console.log(' e.target !== e.currentTarget= ', e.target !== e.currentTarget);
+      // console.log('e.target = ', e.target);
+      // console.log(' e.target !== e.currentTarget= ', e.target !== e.currentTarget);
       onClickBTN(this);
     })
   }
@@ -311,9 +311,9 @@ function getBoard() {
     }
   }
   table3 = [].concat(table31, table32);
-  console.log('table = ', table);
-  console.log('table2 = ', table2);
-  console.log('table3 = ', table3);
+  // console.log('table = ', table);
+  // console.log('table2 = ', table2);
+  // console.log('table3 = ', table3);
 }
 
 // export default shuffle;

@@ -48,9 +48,6 @@ function petPanel1(item) {
   for (let elem of elems) {
     elem.remove();
   }
-  let count = viewDone.view1;
-  // itemCarousel.innerHTML = '';
-  // console.log('shelter = ', shelter);
   for (let i = 0; i < 3; i++) {
     loadContent(item);
     card = document.querySelectorAll("#item-left .card");
@@ -58,25 +55,22 @@ function petPanel1(item) {
     let k = +newSet[i];
     card[i].dataset.pet = shelter[k].name;
     card[i].dataset.id = shelter[k].id;
-    // card[i].classList.add("animate");
     let petImg = document.querySelectorAll(".pet-img");
     petImg[i].setAttribute("src", shelter[k].img);
     petImg[i].setAttribute("alt", shelter[k].name);
     let petsName = document.querySelectorAll(".pets-name");
     petsName[i].textContent = shelter[k].name;
+    // card[i].classList.add("animate");
   }
   afterLoad();
 }
 
 function petPanel2(item) {
-  let count = viewDone.view1;
 
   for (let i = 0; i < 3; i++) {
     loadContent(item);
     card = document.querySelectorAll("#item-active .card");
-    // console.log(' card= ', card);
     let k = +newSet[i];
-    // console.log(' shelter[i]= ', shelter[i]);
     card[i].dataset.pet = shelter[k].name;
     card[i].dataset.id = shelter[k].id;
     // card[i].classList.add("animate");
@@ -94,12 +88,10 @@ function petPanel3(item) {
   for (let elem of elems) {
     elem.remove();
   }
-  let count = viewDone.view1;
 
   for (let i = 0; i < 3; i++) {
     loadContent(item);
     card = document.querySelectorAll("#item-right .card");
-    // console.log(' card= ', card);
     let k = +newSet[i];
     card[i].dataset.pet = shelter[k].name;
     card[i].dataset.id = shelter[k].id;
