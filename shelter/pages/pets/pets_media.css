@@ -12,9 +12,9 @@
         line-height: 26px;
       }
 
-      .header-bar {
+      /* .header-bar {
         margin-right: 10px;
-      }
+      } */
 
       /* ----------pets----------- */
       section.pets .page {
@@ -174,14 +174,22 @@
 
     @media screen and (max-width: 767px) {
 
-      .bar1,
-      .bar2,
-      .bar3 {
-        /* width: 30px; */
-        /* margin: 8px 0 5px; */
-        /* border: 2px solid; */
-        /* border-width: 0px 0px 2px; */
-        border-color: transparent transparent #000000 transparent;
-        /* transition: 0.4s; */
+      .bar {
+        display: block;
+        width: 30px;
+        height: 2px;
+        margin: 4px auto;
+        background-color: rgb(8, 8, 8);
+        transition: 0.4s;
+      }
+
+      .header-bar.change {
+        display: grid;
+        transform: translateX(5px) rotate(90deg);
+      }
+
+      .header-bar.change .bar {
+        background-color: #fff;
+        transition: 0.4s;
       }
     }
