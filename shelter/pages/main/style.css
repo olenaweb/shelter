@@ -505,7 +505,7 @@ section.pets .page {
   height: 100%;
   gap: 61px;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 section.pets>.page>h3 {
