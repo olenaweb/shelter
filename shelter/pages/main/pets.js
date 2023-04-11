@@ -2,6 +2,8 @@
 "use strict";
 let card;
 let oldSet = [0, 1, 2];
+let oldSetRight = [0, 1, 2];
+let oldSetLeft = [0, 1, 2];
 let newSet = [0, 1, 2];
 import shelter from "../../assets/json/animal.js";
 import afterLoad from "../main/popup.js";
@@ -192,6 +194,10 @@ carousel.addEventListener("animationend", (animationEvent) => {
 
 function addSet() {
   let nn;
+  oldSet = [];
+  newSet.forEach((item) => {
+    oldSet.push(item);
+  })
   newSet = [];
   for (let i = 0; i < 3; i++) {
     do {
@@ -199,12 +205,25 @@ function addSet() {
     } while (oldSet.includes(nn) || newSet.includes(nn))
     newSet.push(nn);
   }
-  // console.log('oldSet = ', oldSet);
-  // console.log('newSet = ', newSet);
-  oldSet = [];
-  newSet.forEach((item) => {
-    oldSet.push(item);
-  })
+  console.log('oldSet = ', oldSet);
+  console.log('newSet = ', newSet);
+
 }
+// function addSet() {
+//   let nn;
+//   newSet = [];
+//   for (let i = 0; i < 3; i++) {
+//     do {
+//       nn = Math.floor(Math.random() * 8);
+//     } while (oldSet.includes(nn) || newSet.includes(nn))
+//     newSet.push(nn);
+//   }
+//   console.log('oldSet = ', oldSet);
+//   console.log('newSet = ', newSet);
+//   oldSet = [];
+//   newSet.forEach((item) => {
+//     oldSet.push(item);
+//   })
+// }
 
 
