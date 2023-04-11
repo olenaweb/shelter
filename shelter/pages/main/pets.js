@@ -1,9 +1,9 @@
 // --------загрузка карточек------------
 "use strict";
 let card;
+let viewDone = {};
+viewDone.view1 = 1;  //  size (window.innerwidth) > 1071 , 1,2,3 в зависимости от window.innerwidth
 let oldSet = [0, 1, 2];
-let oldSetRight = [0, 1, 2];
-let oldSetLeft = [0, 1, 2];
 let newSet = [0, 1, 2];
 import shelter from "../../assets/json/animal.js";
 import afterLoad from "../main/popup.js";
@@ -23,20 +23,26 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// window.onresize = function (event) {
-// };
+window.onresize = function (event) {
+  changeSlider();
+};
 
-// const sizePage = document.querySelector("section.pets .page");
-// function changeSlider() {
-//   let size = sizePage.innerWidth;
-//   if (size > 1071) {
-
-//   } else if (size < 1071 && size > 601) {
-
-//   } else if (size < 601) {
-
-//   }
-// }
+const sizePage = document.querySelector("section.pets .page");
+const carouselSize = document.querySelector(".carousel");
+function changeSlider() {
+  let size = sizePage.clientWidth;
+  carouselSize.style.left = `-${size}px`;
+  console.log(' size= ', size);
+  console.log('carouselSize.style.left = ', `-${size}px`);
+  if (size > 1071) {
+    viewDone.view1 = 1;
+  } else if (size < 1071 && size > 601) {
+    viewDone.view1 = 2;
+  } else if (size < 601) {
+    viewDone.view1 = 3;
+  }
+  console.log(' viewDone.view1= ', viewDone.view1);
+}
 
 // -----------------------------------
 function petPanel1(item) {
@@ -121,23 +127,7 @@ function loadContent(item) {
 }
 
 // --------------Carousel--------------
-// window.onresize = function (event) {
-//   loadPets();
-// };
 
-// function loadPets() {
-//   let size = window.innerWidth;
-//   if (size > 1071) {
-//     viewDone.view1 = 1;
-//     maxRange = 6;    // количество экранов пагинации
-//   } else if (size < 1071 && size > 601) {
-//     viewDone.view1 = 2;
-//     maxRange = 8;
-//   } else if (size < 601) {
-//     viewDone.view1 = 3;
-//     maxRange = 16;
-//   }
-// }
 
 const btnLeft = document.querySelector("#btn-left");
 const btnRight = document.querySelector(".button-right");
@@ -151,13 +141,36 @@ btnRight.addEventListener("click", moveRight);
 
 
 function moveRight() {
-  carousel.classList.add("move-right");
+  switch (viewDone.view1) {
+    case (1):
+      carousel.classList.add("move-right");
+      break;
+    case (2):
+      carousel.classList.add("move-right2");
+      break;
+    case (3):
+      carousel.classList.add("move-right3");
+      break;
+  }
+
   btnRight.removeEventListener("click", moveRight);
   btnLeft.removeEventListener("click", moveLeft);
 }
 
 function moveLeft() {
-  carousel.classList.add("move-left");
+
+  switch (viewDone.view1) {
+    case (1):
+      carousel.classList.add("move-left");
+      break;
+    case (2):
+      carousel.classList.add("move-left2");
+      break;
+    case (3):
+      carousel.classList.add("move-left3")
+      break;
+  }
+
   btnRight.removeEventListener("click", moveRight);
   btnLeft.removeEventListener("click", moveLeft);
 }
@@ -165,8 +178,13 @@ function moveLeft() {
 
 carousel.addEventListener("animationend", (animationEvent) => {
   // console.log('animationEvent = ', animationEvent);
+  carousel.classList.remove("move-left");
+  carousel.classList.remove("move-left2");
+  carousel.classList.remove("move-left3");
+  carousel.classList.remove("move-right");
+  carousel.classList.remove("move-right2");
+  carousel.classList.remove("move-right3");
   if (animationEvent.animationName == "go-left") {
-    carousel.classList.remove("move-left");
     itemRight.innerHTML = itemActive.innerHTML;
     itemActive.innerHTML = itemLeft.innerHTML;
     addSet();
@@ -174,7 +192,6 @@ carousel.addEventListener("animationend", (animationEvent) => {
     newHanler();
 
   } else {
-    carousel.classList.remove("move-right");
     itemLeft.innerHTML = itemActive.innerHTML;
     itemActive.innerHTML = itemRight.innerHTML;
     addSet();
@@ -182,7 +199,6 @@ carousel.addEventListener("animationend", (animationEvent) => {
     newHanler();
   }
   afterLoad();
-
 
   function newHanler() {
     btnLeft.addEventListener("click", moveLeft);
