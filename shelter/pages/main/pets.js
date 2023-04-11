@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
   petPanel2('#item-active');
   addSet();
   petPanel3('#item-right');
+  changeSlider();
 });
 
 
