@@ -1,6 +1,6 @@
 "use strict";
 import shelter from "../../assets/json/animal.js";
-console.log(' shelter= ', shelter);
+// console.log(' shelter= ', shelter);
 
 // ------Popup ------
 document.addEventListener("DOMContentLoaded", function () {
@@ -101,7 +101,7 @@ bar.addEventListener('click', menuToggle);
 // const body = document.querySelector('body');
 
 function menuToggle() {
-  console.log(burgerMenu.classList);
+  // console.log(burgerMenu.classList);
   burgerMenu.classList.toggle('active-bar');
   burgerMenu.classList.toggle('inactive');
   headerBar.classList.toggle('change');
