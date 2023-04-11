@@ -149,6 +149,20 @@
     display: none;
   }
 
+  .button-left,
+  .button-right {
+    position: absolute;
+    top: 72%;
+  }
+
+  .button-left {
+    left: 18%;
+  }
+
+  .button-right {
+    right: 18%;
+  }
+
   /* ---------about---------- */
   section.about.page {
     padding: 44px 0 49px;
