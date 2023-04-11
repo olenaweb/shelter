@@ -155,7 +155,10 @@
      top: 51%;
    }
 
-   .item .card:nth-child(3) {
+   /* .item .card:nth-child(3) {
+     display: none;
+   } */
+   .item .content .card:nth-child(3) {
      display: none;
    }
 
