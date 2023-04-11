@@ -22,10 +22,11 @@ const endRight = document.querySelector("#end-right");
 import shelter from "../../assets/json/animal.js";
 import afterLoad from "../main/popup.js";
 let template = document.querySelector("#template");
-
+console.log('shelter = ', shelter);
 document.addEventListener("DOMContentLoaded", function () {
   clickEventHandler(); // для nav-btn
   getBoard();          // создание двумерных массивов  6x8, 8x6, 16x3
+  // console.log('DOMContentLoaded choosenBtn = ', choosenBtn);
   loadPets();          // загрузка карточек petPanel()
 });
 
@@ -50,12 +51,13 @@ function loadPets() {
   }
 
   if (viewDone.view1 !== viewDone.view2) {
-    range = 1;
+    range = 0;
     choosenBtn = 1;
-    centerBtn.textContent = range.toString();
+    centerBtn.textContent = choosenBtn.toString();
     endLeftRange();
     petPanel();
   }
+  // console.log('choosenBtn = ', choosenBtn);
 }
 
 
@@ -168,6 +170,8 @@ function petPanel() {
 
   switch (viewDone.view1) {
     case 1:
+      // console.log(' table= ', table);
+      // console.log('range = ', range);
       table[range].forEach((unit, i) => {
         if (viewDone.view1 !== viewDone.view2) {
           loadContent();   // add from template
@@ -218,6 +222,7 @@ function petPanel() {
   }
   afterLoad();  // addEventListener для карточек
   viewDone.view2 = viewDone.view1;
+
 }
 
 function loadContent() {
