@@ -49,7 +49,7 @@ function loadPets() {
     viewDone.view1 = 3;
     maxRange = 16;
   }
-
+  // ----изменился размер экрана и надо обновить количество карточек на странице
   if (viewDone.view1 !== viewDone.view2) {
     range = 0;
     choosenBtn = 1;
