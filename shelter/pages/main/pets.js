@@ -3,8 +3,8 @@
 let card;
 let viewDone = {};
 viewDone.view1 = 3;  //  size (window.innerwidth) > 1071 , 3,2,1 в зависимости от window.innerwidth
-let oldSet = [0, 1, 2];
-let newSet = [0, 1, 2];
+let oldSet = [];
+let newSet = [];
 import shelter from "../../assets/json/animal.js";
 import afterLoad from "../main/popup.js";
 
@@ -184,15 +184,14 @@ carousel.addEventListener("animationend", (animationEvent) => {
 
     addSet();
     petPanel1('#item-left');
-    newHanler();
 
   } else {
     itemLeft.innerHTML = itemActive.innerHTML;
     itemActive.innerHTML = itemRight.innerHTML;
     addSet();
     petPanel3('#item-right');
-    newHanler();
   }
+  newHanler();
   afterLoad();
 
   function newHanler() {
@@ -210,21 +209,20 @@ function addSet() {
     oldSet.push(item);
   })
   let oldactiveSet = [];
-  let activeSet = itemActive.querySelectorAll(".item .card");
-  activeSet.forEach((card) => {
-    // console.log(' card.dataset.id= ', card.dataset.id);
+  let activeSetCards = itemActive.querySelectorAll(".item .card");
+  activeSetCards.forEach((card) => {
     oldactiveSet.push(+card.dataset.id);
   })
   newSet = [];
   for (let i = 0; i < 3; i++) {
     do {
       nn = Math.floor(Math.random() * 8);
-    } while (oldactiveSet.includes(nn) || newSet.includes(nn))
+    } while (oldactiveSet.includes(nn) || newSet.includes(nn) || oldSet.includes(nn))
     newSet.push(nn);
   }
-  // console.log(' oldSet= ', oldSet);
-  // console.log('oldactiveSet = ', oldactiveSet);
-  // console.log('newSet = ', newSet);
+  console.log(' oldSet= ', oldSet);
+  console.log('oldactiveSet = ', oldactiveSet);
+  console.log('newSet = ', newSet);
 }
 
 
