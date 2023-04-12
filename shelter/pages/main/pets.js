@@ -220,9 +220,9 @@ function addSet() {
     } while (oldactiveSet.includes(nn) || newSet.includes(nn) || oldSet.includes(nn))
     newSet.push(nn);
   }
-  console.log(' oldSet= ', oldSet);
-  console.log('oldactiveSet = ', oldactiveSet);
-  console.log('newSet = ', newSet);
+  // console.log(' oldSet= ', oldSet);
+  // console.log('oldactiveSet = ', oldactiveSet);
+  // console.log('newSet = ', newSet);
 }
 
 
