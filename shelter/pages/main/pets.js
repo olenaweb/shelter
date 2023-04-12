@@ -213,6 +213,9 @@ function addSet() {
   activeSetCards.forEach((card) => {
     oldactiveSet.push(+card.dataset.id);
   })
+  if (activeSetCards.length > 0) {
+    oldSet = [];
+  }
   newSet = [];
   for (let i = 0; i < 3; i++) {
     do {
