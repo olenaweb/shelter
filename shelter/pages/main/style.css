@@ -65,6 +65,10 @@ body {
   background: rgba(41, 41, 41, 0.6);
 }
 
+.modal.animate {
+  z-index: 7;
+}
+
 .animate {
   -webkit-animation: animatezoom 1.5s;
   animation: animatezoom 1.5s;
