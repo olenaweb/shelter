@@ -42,12 +42,14 @@ function popupOpen() {
   const windowHeight = window.innerHeight;
   const windowWidth = window.innerWidth;
   const popupHeight = popupPet.offsetHeight;
+  const delta = popupPet.offsetTop;
   const popupWidth = popupPet.offsetWidth;
-  let topPopup = windowHeight / 2 - popupHeight / 2;
+  let topPopup = windowHeight / 2 - (popupHeight) / 2 - delta;
   let leftPopup = windowWidth / 2 - popupWidth / 2;
 
   popup.style.top = topPopup.toString() + 'px';
   popup.style.left = leftPopup.toString() + 'px';
+
 }
 
 function showCard(petName) {
