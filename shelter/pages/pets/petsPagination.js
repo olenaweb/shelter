@@ -240,8 +240,7 @@ function shuffle(array) {
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex--;
     // And swap it with the current element.
-    [array[currentIndex], array[randomIndex]] = [
-      array[randomIndex], array[currentIndex]];
+    [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
   }
   return array;
 }
@@ -277,13 +276,7 @@ function getBoard() {
       table[row][col] = mas[k];
       k++;
     }
-    // ----320-----
-    // for (let col3 = 0; col3 < 4; col3++) {
-    //   table31[row][col3] = mas31[k3];
-    //   table32[row][col3] = mas32[k3];
-    //   k3++;
-    // }
-    // table3 = [].concat(table31, table32);
+
     // -----768-----
     for (let col21 = 0; col21 < 6; col21++) {
       table21[row][col21] = mas21[k21];
@@ -303,6 +296,7 @@ function getBoard() {
   }
   table2 = [].concat(table21, table22);
 
+  // ----320-----
   for (let row31 = 0; row31 < 8; row31++) {
     k3 = 0;
     table31[row31] = new Array(3);
