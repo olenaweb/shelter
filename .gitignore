@@ -103,7 +103,7 @@ dist
 # TernJS port file
 .tern-port
 .github
-howto.txt
-Cozy-House.webm
-JS_FE 2023Q1 Shelter.mp4
-Как играть в Сапера.docx
+.gitignore
+.gitattributes
+.vscode
+
