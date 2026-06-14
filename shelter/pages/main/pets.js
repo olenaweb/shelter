@@ -8,6 +8,135 @@ let newSet = [];
 import shelter from "../../assets/json/animal.js";
 import afterLoad from "../main/popup.js";
 
+const evaluationCriteria = {
+  mainPage: {
+    total: 70,
+    sections: {
+      markupValidation: {
+        points: 10,
+        items: [
+          {
+            title: "Markup is valid per validator",
+            points: 5,
+            details: "No errors/warnings: full points. Warnings only: +2.5",
+          },
+          {
+            title: "Text-based logo, exactly one h1, favicon added",
+            points: 5,
+          },
+        ],
+      },
+      layoutMatchesDesign: {
+        points: 35,
+        items: [
+          { title: "Header block", points: 5 },
+          { title: "Not only block", points: 5 },
+          { title: "About block", points: 5 },
+          { title: "Our Friends block", points: 5 },
+          { title: "Help block", points: 5 },
+          { title: "In addition block", points: 5 },
+          { title: "Footer block", points: 5 },
+        ],
+      },
+      cssRequirements: {
+        points: 15,
+        items: [
+          {
+            title: "Help block uses grid/flex layout",
+            points: 5,
+          },
+          {
+            title: "Layout stays centered on width > 1280px",
+            points: 5,
+          },
+          {
+            title: "Background color stretches full page width",
+            points: 5,
+          },
+        ],
+      },
+      interactivity: {
+        points: 10,
+        items: [
+          {
+            title: "About the Shelter highlighted/non-clickable, others interactive, smooth anchors, links behavior",
+            points: 5,
+          },
+          {
+            title: "Pet cards fully hover-interactive, smooth hover/active styles without layout shift",
+            points: 5,
+          },
+        ],
+      },
+    },
+  },
+  petsPage: {
+    total: 40,
+    sections: {
+      markupValidation: {
+        points: 10,
+        items: [
+          {
+            title: "Markup is valid per validator (same as Main)",
+            points: 5,
+          },
+          {
+            title: "Text-based logo, exactly one h1, favicon added",
+            points: 5,
+          },
+        ],
+      },
+      layoutMatchesDesign: {
+        points: 15,
+        items: [
+          { title: "Header block", points: 5 },
+          { title: "Our Friends block", points: 5 },
+          { title: "Footer block", points: 5 },
+        ],
+      },
+      cssRequirements: {
+        points: 5,
+        items: [
+          {
+            title: "On width > 1280px layout stays centered and background is full-width",
+            points: 5,
+          },
+        ],
+      },
+      interactivity: {
+        points: 10,
+        items: [
+          {
+            title: "Our pets highlighted/non-clickable, others interactive, correct pagination states, smooth anchors, links behavior",
+            points: 5,
+          },
+          {
+            title: "Pet cards fully hover-interactive, smooth hover/active styles without layout shift",
+            points: 5,
+          },
+        ],
+      },
+    },
+  },
+};
+
+function logEvaluationCriteria() {
+  console.log(' В работе сделаны уже все три этапа, картинки загружаются программно, поэтому выбранные картинки могут быть другими  !!! ',);
+  console.group("Shelter: критерии оценки");
+  console.log("Структура критериев:", evaluationCriteria);
+  console.table([
+    { page: "Main", totalPoints: evaluationCriteria.mainPage.total },
+    { page: "Pets", totalPoints: evaluationCriteria.petsPage.total },
+    {
+      page: "Total",
+      totalPoints: evaluationCriteria.mainPage.total + evaluationCriteria.petsPage.total,
+    },
+  ]);
+  console.groupEnd();
+}
+
+logEvaluationCriteria();
+
 let template = document.querySelector("#template");
 // ----------
 // const carouselLeft = document.querySelector(".carousel");
