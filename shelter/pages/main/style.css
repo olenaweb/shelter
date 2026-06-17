@@ -12,15 +12,14 @@ html {
 }
 
 :root {
-  --fonts-family: 'ArialMT', Arial, Helvetica, sans-serif;
-  --fonts-family-else: 'Georgia', serif;
+  --fonts-family: "ArialMT", Arial, Helvetica, sans-serif;
+  --fonts-family-else: "Georgia", serif;
 }
 
 .logo-title a:hover,
 .logo-title a:active {
   /* color: #FDDCC4; */
   color: #f76d0a;
-
 }
 
 a:hover,
@@ -33,7 +32,8 @@ a:active {
 a,
 button,
 .credit-card,
-.card {
+.card,
+.item {
   transition: all 500ms ease-in-out;
 }
 
@@ -45,10 +45,9 @@ button,
   background: rgba(82, 66, 66, 0.221);
 } */
 
-
 body {
   margin: 0 auto;
-  font-family: 'ArialMT', Arial, Helvetica, sans-serif;
+  font-family: "ArialMT", Arial, Helvetica, sans-serif;
   font-size: calc(20rem / 16);
 }
 
@@ -78,7 +77,6 @@ body {
   -webkit-animation: animatezoom 2.5s;
   animation: animatezoom 2.5s;
 }
-
 
 @-webkit-keyframes animatezoom {
   from {
@@ -143,8 +141,6 @@ body {
   }
 } */
 
-
-
 /* ------------------------- */
 .container {
   display: flex;
@@ -156,7 +152,7 @@ body {
 }
 
 h3 {
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 2.1875rem;
@@ -167,7 +163,7 @@ h3 {
 }
 
 h4 {
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -214,7 +210,7 @@ h4 {
   height: 500px;
   /* height: 26.3vw; */
   box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
-  background: #FAFAFA;
+  background: #fafafa;
   border-radius: 9px;
 }
 
@@ -236,9 +232,8 @@ h4 {
   row-gap: 40px;
 }
 
-
 .popup-txt div p {
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -251,14 +246,14 @@ h4 {
   display: grid;
   row-gap: 11px;
   padding: 0 0 0 15px;
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 110%;
   letter-spacing: 0.06em;
   letter-spacing: 1.3px;
-  color: #F1CDB3;
+  color: #f1cdb3;
 }
 
 .popup-list span {
@@ -288,31 +283,31 @@ header .page {
 .logo-title {
   display: flex;
   align-items: center;
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   /* font-size: 32px; */
   font-size: 32px;
   line-height: 110%;
   letter-spacing: 0.06em;
-  color: #F1CDB3;
+  color: #f1cdb3;
 }
 
 .logo-title a {
   text-decoration: none;
-  color: #F1CDB3;
+  color: #f1cdb3;
   /* -webkit-text-stroke: 0.5px #000000; */
   /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 
 .logo-subtitle {
-  font-family: 'Arial';
+  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 34px;
   letter-spacing: 0.1em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* h1 span {
@@ -332,14 +327,12 @@ header .page {
 .nav {
   width: 36.9%;
   width: calc(443 / 1200 * 100%);
-
 }
 
 .menu-list {
   display: flex;
   justify-content: space-between;
 }
-
 
 .nav li {
   /* по горизонтали */
@@ -348,15 +341,15 @@ header .page {
 
 .nav li a:hover {
   cursor: pointer;
-  color: #FAFAFA;
+  color: #fafafa;
 }
 
 .menu-link {
   text-decoration: none;
   padding: 0 0 3px;
-  color: #CDCDCD;
+  color: #cdcdcd;
   border: none;
-  font-family: 'Arial';
+  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -364,14 +357,13 @@ header .page {
 }
 
 .menu-link.active {
-  color: #FAFAFA;
+  color: #fafafa;
   pointer-events: none;
 
   border: 3px solid;
   border-width: 0px 0px 3px;
-  border-color: transparent transparent #F1CDB3 transparent;
+  border-color: transparent transparent #f1cdb3 transparent;
 }
-
 
 /* ------------main--------------- */
 main {
@@ -387,7 +379,9 @@ main {
   width: 100%;
   margin: -90px auto 0;
   padding: 90px 0 0 0;
-  background: url('../../assets/images/noise_transparent@2x.png'), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  background:
+    url("../../assets/images/noise_transparent@2x.png"),
+    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
 }
 
 .bigl .page {
@@ -406,34 +400,33 @@ main {
 .bigl-text h1:first-child {
   /* padding: 0 150px 0 0; */
   padding: 0;
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   /* font-size: 44px; */
   font-size: 2.75rem;
   line-height: 130%;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-
 .bigl-text p:nth-child(2) {
-  font-family: 'Arial';
+  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   /* font-size: 15px; */
   font-size: 0.9375rem;
   line-height: 160%;
-  color: #CDCDCD;
+  color: #cdcdcd;
 }
 
 .bigl-btn {
   width: 207px;
   height: 52px;
-  background: #F1CDB3;
+  background: #f1cdb3;
   border-radius: 100px;
   border: none;
 
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   /* font-size: 17px; */
@@ -445,7 +438,7 @@ main {
 
 /* .bigl-btn:hover { */
 button:hover {
-  background: #FDDCC4;
+  background: #fddcc4;
   cursor: pointer;
 }
 
@@ -466,7 +459,6 @@ section.about.page {
   justify-content: flex-start;
 }
 
-
 .about-picture img {
   max-width: 300px;
   max-height: 408px;
@@ -485,19 +477,19 @@ section.about.page {
 
 .about-text p:nth-child(2),
 .about-text p:nth-child(3) {
-  font-family: 'Arial';
+  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   /* font-size: 15px; */
   font-size: 0.9375rem;
   line-height: 160%;
-  color: #4C4C4C;
+  color: #4c4c4c;
 }
 
 /* ----------pets----------- */
 section.pets {
   /* height: 877px; */
-  background: #F6F6F6;
+  background: #f6f6f6;
 }
 
 section.pets .page {
@@ -512,10 +504,9 @@ section.pets .page {
   overflow: hidden;
 }
 
-section.pets>.page>h3 {
+section.pets > .page > h3 {
   text-align: center;
 }
-
 
 .carousel {
   display: flex;
@@ -538,9 +529,9 @@ section.pets>.page>h3 {
   height: 52px;
   top: 51%;
   transform: translateY(-50%);
-  border: 2px solid #F1CDB3;
+  border: 2px solid #f1cdb3;
   border-radius: 100px;
-  background: #F6F6F6;
+  background: #f6f6f6;
 }
 
 .button-left {
@@ -561,11 +552,10 @@ section.pets>.page>h3 {
 .button-left:hover,
 .button-right:hover,
 .button-close:hover {
-  background: #FDDCC4;
-  border: 2px solid #FDDCC4;
+  background: #fddcc4;
+  border: 2px solid #fddcc4;
   cursor: pointer;
 }
-
 
 .item {
   position: relative;
@@ -599,18 +589,18 @@ section.pets>.page>h3 {
   display: grid;
   gap: 30px;
   border-radius: 9px;
-  background: #FAFAFA;
+  background: #fafafa;
   cursor: pointer;
   justify-content: center;
 }
 
 .card:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .card:hover button {
-  background: #FDDCC4;
+  background: #fddcc4;
   border: none;
   transition: all 500ms ease-in-out;
 }
@@ -627,7 +617,7 @@ section.pets>.page>h3 {
 
 .card p {
   text-align: center;
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   /* font-size: 20px; */
@@ -642,9 +632,9 @@ section.pets>.page>h3 {
   margin: 0 auto 26px;
   width: 187px;
   height: 52px;
-  border: 2px solid #F1CDB3;
+  border: 2px solid #f1cdb3;
   border-radius: 100px;
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -652,20 +642,20 @@ section.pets>.page>h3 {
   line-height: 130%;
   letter-spacing: 0.06em;
   color: #292929;
-  background: #FAFAFA;
+  background: #fafafa;
 }
 
 .card button:hover {
   border: none;
 }
 
-.pets .page>button.rest {
+.pets .page > button.rest {
   width: 261px;
   height: 52px;
-  background: #F1CDB3;
+  background: #f1cdb3;
   border-radius: 100px;
   border: none;
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   /* font-size: 17px; */
@@ -678,8 +668,8 @@ section.pets>.page>h3 {
 /* #pets > div > button.button-right */
 /* #pets > div > button.button-left */
 
-.pets .page>button.rest:hover {
-  background: #FDDCC4;
+.pets .page > button.rest:hover {
+  background: #fddcc4;
   cursor: pointer;
   border: none;
 }
@@ -687,7 +677,7 @@ section.pets>.page>h3 {
 /* ------help---------- */
 section.help {
   /* height: 611px; */
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 section.help .page {
@@ -726,12 +716,10 @@ section.help .page h3 {
   height: auto;
 }
 
-
-
 .some h4 {
   padding: 24px 0 0 0;
   text-align: center;
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   /* font-size: 20px; */
@@ -743,7 +731,7 @@ section.help .page h3 {
 
 /* ---------donation----------- */
 section.donation {
-  background: #F6F6F6;
+  background: #f6f6f6;
 }
 
 section.donation .page {
@@ -773,7 +761,7 @@ section.donation .page {
 
 .donation-text h3:first-child {
   text-align: left;
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   /* font-size: 35px; */
@@ -788,16 +776,15 @@ section.donation .page {
   justify-content: space-around;
   width: 349px;
   height: 43px;
-  background: #F1CDB3;
+  background: #f1cdb3;
   border-radius: 9px;
   border: none;
 }
 
 .credit-card:hover {
-  background: #FDDCC4;
+  background: #fddcc4;
   cursor: pointer;
 }
-
 
 /* .credit-card img:first-child+img {
   padding-top: 8px;
@@ -810,7 +797,7 @@ a:has(.credit-card span) {
 .credit-card span {
   color: #545454;
 
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   /* font-size: 20px; */
@@ -822,7 +809,7 @@ a:has(.credit-card span) {
 
 .donation-text p:nth-child(2) {
   text-align: left;
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   /* font-size: 15px; */
@@ -833,12 +820,12 @@ a:has(.credit-card span) {
 }
 
 .donation-text p:nth-child(4) {
-  font-family: 'Arial';
+  font-family: "Arial";
   font-style: italic;
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  color: #B2B2B2;
+  color: #b2b2b2;
 }
 
 /* ---------footer-------- */
@@ -851,16 +838,18 @@ footer {
   /* width: 100%; */
   /* ------row------ */
   justify-content: center;
-  background: url('../../assets/images/noise_transparent@2x.png'), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  background:
+    url("../../assets/images/noise_transparent@2x.png"),
+    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
 
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 115%;
   letter-spacing: 0.06em;
-  color: #F1CDB3;
+  color: #f1cdb3;
 }
 
 footer .page {
@@ -885,7 +874,7 @@ footer .page {
 
 .question h3,
 .waiting h3 {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .mail img,
@@ -903,7 +892,7 @@ footer .page {
 .address1,
 .address2 {
   text-decoration: none;
-  color: #F1CDB3;
+  color: #f1cdb3;
 }
 
 /* ---------second column------ */
@@ -927,7 +916,7 @@ footer .page {
 
 .address1,
 .address2 {
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   /* font-size: 20px; */
