@@ -113,7 +113,6 @@
   .bigl-text h1:first-child {
     padding: 0;
   }
-
 }
 
 /* --- 480 -- */
@@ -184,11 +183,11 @@
     gap: 23px;
   }
 
+  .about-text h2,
   .about-text h3 {
     padding: 0;
     text-align: center;
   }
-
 
   .about-text p:nth-child(2),
   .about-text p:nth-child(3) {
@@ -203,7 +202,6 @@
     gap: 47px;
   }
 
-
   .card p {
     font-size: 20px;
     line-height: 23px;
@@ -214,14 +212,12 @@
     line-height: 130%;
   }
 
-  .pets .page>button {
+  .pets .page > button {
     margin: 72px 0 0 0;
     font-size: 17px;
     line-height: 130%;
     letter-spacing: 0.06em;
   }
-
-
 
   /* ---------donation----------- */
   section.donation .page {
@@ -340,7 +336,7 @@
     column-gap: 19px;
   }
 
-  div.pin1>div>img {
+  div.pin1 > div > img {
     padding: 5px 0 0;
   }
 
@@ -351,7 +347,9 @@
     justify-content: center;
   }
 
+  .question h2,
   .question h3,
+  .waiting h2,
   .waiting h3 {
     text-align: center;
     font-size: 25px;
@@ -371,7 +369,6 @@
     width: 100%;
     height: auto;
   }
-
 }
 
 /*   ---320----   */
@@ -422,7 +419,6 @@
     right: 18%;
   }
 
-
   .item .content .card:nth-child(2),
   .item .content .card:nth-child(3) {
     display: flex;
@@ -442,7 +438,6 @@
   #item-right .content .card:nth-child(3) {
     display: none;
   }
-
 
   /* ----popup----- */
   .popup.animate-popup {
@@ -505,6 +500,7 @@
 
   /* ------popup------ */
 
+  h2,
   h3 {
     font-size: 25px;
     line-height: 130%;
@@ -520,8 +516,6 @@
     line-height: 30px;
     padding: 0 0 0 4px;
   }
-
-
 
   /* ---------------------------------------------- */
   .nav {
@@ -577,8 +571,6 @@
     letter-spacing: 0.06em;
   }
 
-
-
   /* ---------about---------- */
   section.about.page {
     padding: 44px 0 0;
@@ -608,11 +600,11 @@
     /* order: 1; */
   }
 
+  .about-text h2,
   .about-text h3 {
     padding: 0;
     text-align: center;
   }
-
 
   .about-text p:nth-child(2),
   .about-text p:nth-child(3) {
@@ -627,7 +619,6 @@
     gap: 47px;
   }
 
-
   .card p {
     font-size: 20px;
     line-height: 23px;
@@ -638,14 +629,12 @@
     line-height: 130%;
   }
 
-  .pets .page>button {
+  .pets .page > button {
     margin: 72px 0 0 0;
     font-size: 17px;
     line-height: 130%;
     letter-spacing: 0.06em;
   }
-
-
 
   /* ------help---------- */
   section.help .page {
@@ -653,7 +642,7 @@
     /* align-items: center; */
     /* flex-direction: column; */
     /* height: 100%; */
-    gap: 36px
+    gap: 36px;
   }
 
   .gifts {
@@ -684,7 +673,6 @@
   .some img {
     scale: 0.83;
   }
-
 
   /* ---------donation----------- */
   section.donation .page {
@@ -807,7 +795,7 @@
     column-gap: 19px;
   }
 
-  div.pin1>div>img {
+  div.pin1 > div > img {
     padding: 5px 0 0;
   }
 
@@ -818,7 +806,9 @@
     justify-content: center;
   }
 
+  .question h2,
   .question h3,
+  .waiting h2,
   .waiting h3 {
     text-align: center;
     font-size: 25px;
@@ -838,5 +828,4 @@
     width: 100%;
     height: auto;
   }
-
 }
