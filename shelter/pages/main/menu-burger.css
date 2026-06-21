@@ -1,11 +1,9 @@
-@media screen and (max-width: 767px) {
-
+@media screen and (max-width: 767.98px) {
   /* --------------Window Burger------------ */
   div.burger-menu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
     padding: 248px 0 0 0;
 
     position: absolute;
@@ -46,22 +44,22 @@
   }
 
   .burger-link {
-    font-family: 'Arial';
+    font-family: "Arial";
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 160%;
-    color: #FAFAFA;
+    color: #fafafa;
     text-decoration: none;
   }
 
   .burger-link.active-link {
-    color: #FAFAFA;
+    color: #fafafa;
     pointer-events: none;
     padding-bottom: 9px;
     border: 3px solid;
     border-width: 0px 0px 3px;
-    border-color: transparent transparent #F1CDB3 transparent;
+    border-color: transparent transparent #f1cdb3 transparent;
   }
 
   /* -------bar------- */
@@ -79,14 +77,13 @@
     margin: 8px 0 5px;
     border: 2px solid;
     border-width: 0 0 2px;
-    border-color: transparent transparent #F1CDB3 transparent;
+    border-color: transparent transparent #f1cdb3 transparent;
     transition: all 0.5s;
   }
 
   .header-bar.change {
     display: flex;
   }
-
 
   .header-bar.change .bar1,
   .header-bar.change .bar2,
@@ -95,6 +92,6 @@
     height: 30px;
     margin: 5px 8px 0 0;
     border-width: 0 2px 0 0;
-    border-color: transparent #F1CDB3 transparent transparent;
+    border-color: transparent #f1cdb3 transparent transparent;
   }
 }
