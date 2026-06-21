@@ -84,6 +84,7 @@ body {
   overflow: hidden;
 }
 
+h2,
 h3 {
   font-family: 'Georgia';
   font-style: normal;
@@ -316,6 +317,7 @@ section.about.page {
   gap: 5px;
 }
 
+.about-text h2,
 .about-text h3 {
   padding: 14px 60px 0 0;
 }
@@ -677,6 +679,7 @@ footer .page {
   row-gap: 38px;
 }
 
+.question h2,
 .question h3,
 .waiting h3 {
   color: #FFFFFF;
