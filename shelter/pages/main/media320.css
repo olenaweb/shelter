@@ -11,19 +11,15 @@
     width: calc(600 / 719 * 100%);
   }
 
-  .nav {
-    display: none;
-  }
-
-  .bigl-text h1:first-child {
-    padding: 0;
-  }
-
   .carousel {
-    margin: 0 auto;
-    position: relative;
+    max-width: 600px;
     width: 100%;
-    max-width: 612px;
+    left: -600px;
+  }
+
+  .content {
+    justify-content: center;
+    column-gap: 40px;
   }
 
   .item {
@@ -32,22 +28,90 @@
     justify-content: center;
   }
 
-  .item .card:nth-child(2),
-  .item .card:nth-child(3) {
+  .item .content .card:nth-child(2),
+  .item .content .card:nth-child(3) {
     display: none;
   }
 
-  .button-left,
+  /* .button-left,
   .button-right {
     position: absolute;
-  }
+  } */
 
   .button-left {
-    left: 19%;
+    left: 0;
   }
 
   .button-right {
-    right: 19%;
+    right: 0;
+  }
+
+  /* ----popup----- */
+  .popup.animate-popup {
+    max-width: 270px;
+    width: 100%;
+    max-height: 393px;
+    min-height: 393px;
+  }
+
+  .popup-pet {
+    padding: 10px;
+    grid-template-columns: 100%;
+    max-width: 240px;
+    width: 100%;
+    /* height: 341px; */
+    height: 359px;
+    height: 370px;
+  }
+
+  .popup-img {
+    display: none;
+  }
+
+  .popup-txt .popup-head {
+    text-align: center;
+    padding: 10px 0 10px 0;
+  }
+
+  .popup-txt div {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    row-gap: 20px;
+    font-size: 20px;
+  }
+
+  .popup-txt div h4 {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .popup-txt div p {
+    font-size: 13px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+  }
+
+  .popup-list {
+    row-gap: 5px;
+    padding: 0 0 0 15px;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 1.8px;
+  }
+
+  .button-close {
+    top: 0;
+    right: 1.5%;
+  }
+
+  /* ------popup------ */
+  .nav {
+    display: none;
+  }
+
+  .bigl-text h1:first-child {
+    padding: 0;
   }
 }
 
@@ -55,6 +119,47 @@
 @media screen and (max-width: 640px) {
   html {
     font-size: 14px;
+  }
+
+  .page {
+    width: calc(600 / 640 * 100%);
+  }
+
+  .carousel {
+    max-width: 600px;
+    width: 100%;
+    /* width: 600px; */
+    left: -600px;
+  }
+
+  .content {
+    /* justify-content: center; */
+    column-gap: 40px;
+  }
+
+  .item {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .item .content .card:nth-child(2),
+  .item .content .card:nth-child(3) {
+    display: none;
+  }
+
+  .button-left,
+  .button-right {
+    position: absolute;
+    top: 72%;
+  }
+
+  .button-left {
+    left: 18%;
+  }
+
+  .button-right {
+    right: 18%;
   }
 
   /* ---------about---------- */
@@ -84,7 +189,6 @@
     text-align: center;
   }
 
-
   .about-text p:nth-child(2),
   .about-text p:nth-child(3) {
     font-size: 15px;
@@ -98,25 +202,6 @@
     gap: 47px;
   }
 
-  .carousel {
-    margin: 0 auto;
-    position: relative;
-    width: 100%;
-    max-width: 320px;
-  }
-
-  .item .card:nth-child(2),
-  .item .card:nth-child(3) {
-    display: none;
-  }
-
-  .item {
-    margin: 0 auto;
-    display: flex;
-    /* width: 82.5%; */
-    justify-content: center;
-  }
-
   .card p {
     font-size: 20px;
     line-height: 23px;
@@ -127,25 +212,11 @@
     line-height: 130%;
   }
 
-  .pets .page>button {
+  .pets .page > button {
     margin: 72px 0 0 0;
     font-size: 17px;
     line-height: 130%;
     letter-spacing: 0.06em;
-  }
-
-  .button-left,
-  .button-right {
-    position: absolute;
-    top: 112%;
-  }
-
-  .button-left {
-    left: 21%;
-  }
-
-  .button-right {
-    right: 21%;
   }
 
   /* ---------donation----------- */
@@ -265,7 +336,7 @@
     column-gap: 19px;
   }
 
-  div.pin1>div>img {
+  div.pin1 > div > img {
     padding: 5px 0 0;
   }
 
@@ -278,6 +349,7 @@
 
   .question h2,
   .question h3,
+  .waiting h2,
   .waiting h3 {
     text-align: center;
     font-size: 25px;
@@ -297,13 +369,16 @@
     width: 100%;
     height: auto;
   }
-
 }
 
 /*   ---320----   */
 @media screen and (max-width: 330px) {
   html {
     font-size: 14px;
+  }
+
+  .page {
+    width: calc(300 / 320 * 100%);
   }
 
   .container {
@@ -326,10 +401,6 @@
     /* font-size: 13px; */
     line-height: 30px;
     padding: 0 0 0 4px;
-  }
-
-  .page {
-    width: calc(300 / 320 * 100%);
   }
 
   /* ---------------------------------------------- */
@@ -386,8 +457,6 @@
     letter-spacing: 0.06em;
   }
 
-
-
   /* ---------about---------- */
   section.about.page {
     padding: 44px 0 0;
@@ -423,7 +492,6 @@
     text-align: center;
   }
 
-
   .about-text p:nth-child(2),
   .about-text p:nth-child(3) {
     font-size: 15px;
@@ -437,25 +505,6 @@
     gap: 47px;
   }
 
-  .carousel {
-    margin: 0 auto;
-    position: relative;
-    width: 100%;
-    max-width: 320px;
-  }
-
-  .item .card:nth-child(2),
-  .item .card:nth-child(3) {
-    display: none;
-  }
-
-  .item {
-    margin: 0 auto;
-    display: flex;
-    /* width: 82.5%; */
-    justify-content: center;
-  }
-
   .card p {
     font-size: 20px;
     line-height: 23px;
@@ -466,25 +515,11 @@
     line-height: 130%;
   }
 
-  .pets .page>button {
+  .pets .page > button {
     margin: 72px 0 0 0;
     font-size: 17px;
     line-height: 130%;
     letter-spacing: 0.06em;
-  }
-
-  .button-left,
-  .button-right {
-    position: absolute;
-    top: 112%;
-  }
-
-  .button-left {
-    left: 21%;
-  }
-
-  .button-right {
-    right: 21%;
   }
 
   /* ------help---------- */
@@ -493,7 +528,7 @@
     /* align-items: center; */
     /* flex-direction: column; */
     /* height: 100%; */
-    gap: 36px
+    gap: 36px;
   }
 
   .gifts {
@@ -524,7 +559,6 @@
   .some img {
     scale: 0.83;
   }
-
 
   /* ---------donation----------- */
   section.donation .page {
@@ -647,7 +681,7 @@
     column-gap: 19px;
   }
 
-  div.pin1>div>img {
+  div.pin1 > div > img {
     padding: 5px 0 0;
   }
 
@@ -660,6 +694,7 @@
 
   .question h2,
   .question h3,
+  .waiting h2,
   .waiting h3 {
     text-align: center;
     font-size: 25px;
@@ -679,5 +714,4 @@
     width: 100%;
     height: auto;
   }
-
 }

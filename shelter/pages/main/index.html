@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../../assets/icons/favicon.ico" rel="shortcut icon">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="carousel.css">
   <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="media.css">
   <link rel="stylesheet" href="menu-burger.css">
@@ -17,7 +18,8 @@
 
 <body>
   <div class="container">
-    <div class="modal"></div>
+    <div class="modal animate"></div>
+    <div class="modal-bar animate"></div>
     <div class="burger-menu inactive">
       <ul class="burger-list">
         <li class="burger-item"><a class="burger-link active-link" href="#">About the shelter</a></li>
@@ -28,6 +30,34 @@
             onclick="document.getElementById('modal').style.display='block'" href="#">Modal</a></li> -->
       </ul>
     </div>
+    <!-- popup -->
+    <div class="popup animate-popup">
+      <button class="button-close">
+        <img src="../../assets/icons/close.svg" alt="close">
+      </button>
+      <div class="popup-pet">
+        <div class="popup-img">
+        </div>
+        <div class="popup-txt">
+          <h3 class="popup-head">Jennifer</h3>
+          <div>
+            <h4>Dog - Labrador</h4>
+            <p>Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home.
+              This
+              girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm
+              in
+              the house if she has all of her favorite toys.</p>
+            <ul class="popup-list">
+              <li><span><b>Age:</b> 2 months</span></li>
+              <li><span><b>Inoculations:</b> none</span></li>
+              <li><span><b>Diseases:</b> none</span></li>
+              <li><span><b>Parasites</b>: none</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- popup end -->
     <header>
       <div class="page">
         <div class="logo">
@@ -45,11 +75,18 @@
             <li class="menu-item"><a href="#contact" class="menu-link">Contacts</a></li>
           </ul>
         </nav>
-        <div class="header-bar" onclick="menuToggle()">
+        <!-- <div class="header-bar" onclick="menuToggle()"> -->
+        <div class="header-bar">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <!-- <div class="header-bar">
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
-        </div>
+        </div> -->
 
       </div>
     </header>
@@ -86,36 +123,35 @@
       </section>
       <section class="pets" id="pets">
         <div class="page">
+          <button class="button-left" id="btn-left">
+            <img src="../../assets/icons/Arrow-left.svg" alt="Arrow-left">
+          </button>
           <h3>Our friends who <br>are looking for a house</h3>
-          <div class="carousel-wrapper" id="carousel-wrapper">
-            <div class="carousel" id="carousel">
-              <button class="button-left">
-                <img src="../../assets/icons/Arrow-left.svg" alt="Arrow-left">
-              </button>
-              <div class="item" id="item-active">
-                <div class="card">
-                  <img src="../../assets/images/katrine.png" alt="katrine">
-                  <p>Katrine</p>
-                  <button>Learn more</button>
-                </div>
-                <div class="card">
-                  <img src="../../assets/images/jennifer.png" alt="jennifer">
-                  <p>Jennifer</p>
-                  <button>Learn more</button>
-                </div>
-                <div class="card">
-                  <img src="../../assets/images/woody.png" alt="woody">
-                  <p>Woody</p>
-                  <button>Learn more</button>
-                </div>
+          <div class="carousel" id="carousel">
+            <div class="item" id="item-left">
+              <div class="content">
               </div>
-              <button class="button-right">
-                <img src="../../assets/icons/Arrow-right.svg" alt="Arrow-left">
-              </button>
+            </div>
+            <div class="item" id="item-active">
+              <div class="content">
+                <template id="template">
+                  <div data-pet="pet" data-id=1 class="card">
+                    <img class="pet-img" alt="pet">
+                    <p><span class="pets-name"></span></p>
+                    <button>Learn more</button>
+                  </div>
+                </template>
+              </div>
+            </div>
+            <div class="item" id="item-right">
+              <div class="content">
+              </div>
             </div>
           </div>
-          <!-- <button>Get to know the rest</button> -->
-          <button onclick="window.location.href='../pets/pets.html';">Get to know the rest</button>
+          <button class="button-right" id="btn-right">
+            <img src="../../assets/icons/Arrow-right.svg" alt="Arrow-left">
+          </button>
+          <button class="rest" onclick="window.location.href='../pets/pets.html';">Get to know the rest</button>
         </div>
       </section>
 
@@ -226,7 +262,9 @@
       </div>
     </footer>
   </div>
-  <script src="index.js"></script>
+  <script type="module" src="pets.js"></script>
+  <script type="module" src="popup.js"></script>
+
 </body>
 
 </html>
